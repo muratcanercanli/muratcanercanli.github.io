@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murat Can ERCANLI | Data Analyst & Business Intelligence</title>
+    <meta name="description" content="Portfolio de Murat Can ERCANLI - Data Analyst Junior & Business Intelligence spécialisé en Power BI, SQL, Python, GCP BigQuery et solutions décisionnelles.">
+    <meta name="keywords" content="Murat Can ERCANLI, Data Analyst, Business Intelligence, Power BI, SQL, Python, BigQuery, GCP, Nantes, Portfolio">
+    <meta name="author" content="Murat Can ERCANLI">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://muratcanercanli.github.io/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Murat Can ERCANLI | Data Analyst & Business Intelligence">
+    <meta property="og:description" content="Portfolio de Murat Can ERCANLI - Data Analyst Junior spécialisé en Power BI, BigQuery, SQL et Python.">
+    <meta property="og:url" content="https://muratcanercanli.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="murat_profile.png">
+
+    <!-- Google Fonts: Plus Jakarta Sans for UI, Inter for body, JetBrains Mono for telemetry -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Murat Can ERCANLI",
+      "jobTitle": "Data Analyst & Business Intelligence Specialist",
+      "url": "https://muratcanercanli.github.io/",
+      "sameAs": [
+        "https://github.com/muratcanercanli"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "postalCode": "44300",
+        "addressCountry": "FR"
+      },
+      "email": "ercanlimuratcan@gmail.com",
+      "telephone": "+33669262298"
+    }
+    </script>
+</head>
+<body>
+    <!-- Background Canvas Mesh & Ambient Glow Orbs -->
+    <div class="canvas-grid">
+        <canvas id="canvas-particles"></canvas>
+    </div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-terminal">&gt;_</span>
+                    <span class="logo-name">Murat Can <span class="highlight">ERCANLI</span></span>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link" data-i18n="nav.home">Accueil</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav.about">À Propos</a></li>
+                <li class="nav-item"><a href="#frameworks" class="nav-link" data-i18n="nav.workflow">Méthodologie</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" data-i18n="nav.toolkit">Compétences</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link" data-i18n="nav.credentials">Formation</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Language Switcher Pill -->
+                <div class="lang-switch" id="lang-switch" title="Changer de langue / Switch language">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Thème clair / sombre">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu Hamburger -->
+                <div class="nav-toggle" id="mobile-menu" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero.badge">Recherche CDI | Basé à Nantes (44300)</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.greeting">Bonjour, je suis</span> <br>
+                        <span class="highlight">Murat Can ERCANLI</span>
+                    </h1>
+
+                    <div class="typewriter-container">
+                        <span class="code-symbol">&gt;&nbsp;</span>
+                        <h2 class="hero-subtitle" id="typewriter-text">Data Analyst Junior</h2>
+                    </div>
+
+                    <p class="hero-description" data-i18n="hero.description">
+                        Diplômé d'une licence informatique MIAGE avec une double expérience en alternance industrielle (Manitou Group &amp; Vibracoustic). Passionné par la transformation de données brutes en leviers décisionnels grâce à SQL, GCP BigQuery, Python, Power BI et l'intelligence artificielle conversationnelle.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-i18n="hero.btnContact">Me Contacter</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span data-i18n="hero.btnProjects">Voir les Expériences</span>
+                            <i class="fas fa-layer-group"></i>
+                        </a>
+                        <a href="Murat_ERCANLI_LaTeX_Source (2).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" download>
+                            <span data-i18n="hero.btnResume">Télécharger CV (PDF)</span>
+                            <i class="fas fa-file-arrow-down"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-quick-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span data-i18n="hero.metaLocation">Nantes, France (Mobilité &amp; Permis B)</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span data-i18n="hero.metaDegree">Licence MIAGE (Bac+3)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-portrait-card">
+                        <div class="portrait-glow"></div>
+                        <div class="portrait-frame">
+                            <img src="murat_profile.png" alt="Photo de profil Murat Can ERCANLI" class="portrait-img">
+                        </div>
+
+                        <!-- Floating Telemetry Nodes -->
+                        <div class="telemetry-node node-1">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Power BI &amp; DAX</span>
+                        </div>
+                        <div class="telemetry-node node-2">
+                            <i class="fas fa-database"></i>
+                            <span>GCP BigQuery &amp; SQL</span>
+                        </div>
+                        <div class="telemetry-node node-3">
+                            <i class="fab fa-python"></i>
+                            <span>Python / Pandas</span>
+                        </div>
+                        <div class="telemetry-node node-4">
+                            <i class="fas fa-robot"></i>
+                            <span>Gemini BI Agent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Telemetry (About Me) Section -->
+    <section id="about" class="telemetry-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="about.tag">// SYSTÈME &amp; PROFIL</div>
+                <h2 class="section-title" data-i18n="about.title">À Propos de Moi</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="about.subtitle">Double compétence informatique décisionnelle et compréhension métier approfondie.</p>
+            </div>
+
+            <div class="telemetry-grid">
+                <!-- Left Column: Biography Console -->
+                <div class="telemetry-bio-card">
+                    <div class="bio-card-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">murat_ercanli@bi-engine:~/profile.sh</span>
+                    </div>
+                    <div class="bio-card-body">
+                        <h3 class="bio-heading" data-i18n="about.bioHeading">Data Analyst Junior | Business Intelligence</h3>
+                        
+                        <p class="bio-text" data-i18n="about.bioP1">
+                            Titulaire d'une <strong>Licence informatique MIAGE</strong> à Nantes Université et d'un <strong>BTS SIO SLAM</strong>, j'associe une solide rigueur de développement logiciel à l'analyse avancée des données décisionnelles.
+                        </p>
+                        <p class="bio-text" data-i18n="about.bioP2">
+                            Au cours de mes deux alternances dans l'industrie chez <strong>Manitou Group</strong> et <strong>Vibracoustic</strong>, j'ai piloté la modélisation de KPI opérationnels, automatisé des pipelines de transformation de données sur <strong>GCP BigQuery</strong> et conçu des tableaux de bord interactifs <strong>Power BI</strong> directement adoptés par les directions métier.
+                        </p>
+                        <p class="bio-text" data-i18n="about.bioP3">
+                            Fort également d'un parcours initial en <strong>psychologie</strong> à l'Université Technique du Moyen-Orient (METU), je possède une sensibilité unique pour la compréhension des besoins utilisateurs, l'ergonomie des dashboards décisionnels et l'intégration d'agents IA conversationnels (Gemini, Copilot).
+                        </p>
+
+                        <div class="bio-badges">
+                            <span class="badge"><i class="fas fa-check-circle"></i> <span data-i18n="about.badge1">Orienté Valeur Métier</span></span>
+                            <span class="badge"><i class="fas fa-check-circle"></i> <span data-i18n="about.badge2">Automatisation ETL / Cloud</span></span>
+                            <span class="badge"><i class="fas fa-check-circle"></i> <span data-i18n="about.badge3">Culture Industrielle &amp; Agile</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Specs & Highlights Grid -->
+                <div class="telemetry-specs-wrapper">
+                    <div class="spec-card">
+                        <div class="spec-icon"><i class="fas fa-crosshairs"></i></div>
+                        <div class="spec-content">
+                            <span class="spec-label" data-i18n="about.specGoalLabel">Objectif Actuel</span>
+                            <h4 class="spec-value" data-i18n="about.specGoalVal">Recherche CDI Data Analyst / BI</h4>
+                            <p class="spec-desc" data-i18n="about.specGoalDesc">Disponible immédiatement à Nantes et région Pays de la Loire.</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <div class="spec-icon"><i class="fas fa-industry"></i></div>
+                        <div class="spec-content">
+                            <span class="spec-label" data-i18n="about.specExpLabel">Expérience Industrielle</span>
+                            <h4 class="spec-value" data-i18n="about.specExpVal">2 Ans en Alternance</h4>
+                            <p class="spec-desc" data-i18n="about.specExpDesc">Manitou Group (Engins de manutention) &amp; Vibracoustic (Automobile).</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <div class="spec-icon"><i class="fas fa-language"></i></div>
+                        <div class="spec-content">
+                            <span class="spec-label" data-i18n="about.specLangLabel">Langues &amp; Communication</span>
+                            <h4 class="spec-value" data-i18n="about.specLangVal">FR (C2 Bilingue) | EN (Maîtrise) | TR</h4>
+                            <p class="spec-desc" data-i18n="about.specLangDesc">DUEF C2 Nantes Université • Aisance en environnement international.</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <div class="spec-icon"><i class="fas fa-car-side"></i></div>
+                        <div class="spec-content">
+                            <span class="spec-label" data-i18n="about.specMobLabel">Mobilité &amp; Disponibilité</span>
+                            <h4 class="spec-value" data-i18n="about.specMobVal">Permis B &amp; Véhicule Personnel</h4>
+                            <p class="spec-desc" data-i18n="about.specMobDesc">Mobile sur l'agglomération nantaise et zones industrielles périphériques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Workflow Section -->
+    <section id="frameworks" class="workflow-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="workflow.tag">// WORKFLOW DÉCISIONNEL</div>
+                <h2 class="section-title" data-i18n="workflow.title">Méthodologie &amp; Cycle Analytique</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="workflow.subtitle">Comment je structure la transformation des données pour guider l'action opérationnelle.</p>
+            </div>
+
+            <div class="workflow-grid">
+                <!-- Step 1 -->
+                <div class="workflow-card">
+                    <div class="workflow-step-num">01</div>
+                    <div class="workflow-icon"><i class="fas fa-filter"></i></div>
+                    <h3 class="workflow-card-title" data-i18n="workflow.step1Title">Extraction &amp; Structuration Cloud</h3>
+                    <p class="workflow-card-desc" data-i18n="workflow.step1Desc">
+                        Compréhension des besoins métier avec les équipes opérationnelles. Extraction, nettoyage et transformation de volumétries massives via SQL et BigQuery sur Google Cloud Platform (GCP).
+                    </p>
+                    <div class="workflow-tags">
+                        <span>SQL BigQuery</span>
+                        <span>Data Cleaning</span>
+                        <span>ETL Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="workflow-card highlighted-step">
+                    <div class="workflow-step-num">02</div>
+                    <div class="workflow-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3 class="workflow-card-title" data-i18n="workflow.step2Title">Modélisation &amp; Mesures DAX</h3>
+                    <p class="workflow-card-desc" data-i18n="workflow.step2Desc">
+                        Construction de modèles sémantiques robustes (schémas en étoile, tables de faits &amp; dimensions). Création de mesures DAX complexes, colonnes calculées et gestion du cycle de vie via Azure DevOps.
+                    </p>
+                    <div class="workflow-tags">
+                        <span>Star Schema</span>
+                        <span>Power BI DAX</span>
+                        <span>Azure DevOps</span>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="workflow-card">
+                    <div class="workflow-step-num">03</div>
+                    <div class="workflow-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="workflow-card-title" data-i18n="workflow.step3Title">Restitution BI &amp; IA Conversationnelle</h3>
+                    <p class="workflow-card-desc" data-i18n="workflow.step3Desc">
+                        Conception de rapports visuels clairs et ergonomiques. Déploiement sécurisé sur Power BI Service / SharePoint et enrichissement avec des agents IA (Gemini &amp; Copilot) pour l'exploration en langage naturel.
+                    </p>
+                    <div class="workflow-tags">
+                        <span>Tableaux de Bord</span>
+                        <span>GenAI Agents</span>
+                        <span>Adoption Métier</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Analytical Toolkit Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="skills.tag">// BOÎTE À OUTILS</div>
+                <h2 class="section-title" data-i18n="skills.title">Compétences Techniques &amp; Stack</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="skills.subtitle">Technologies et outils éprouvés en production industrielle.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Group 1: Business Intelligence -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fas fa-chart-pie"></i></div>
+                        <div>
+                            <h3 data-i18n="skills.cat1Title">Business Intelligence &amp; Dataviz</h3>
+                            <span class="cat-subtitle" data-i18n="skills.cat1Sub">Modélisation &amp; Tableaux de Bord</span>
+                        </div>
+                    </div>
+                    <div class="skill-pill-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">Power BI (Desktop &amp; Service)</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">DAX &amp; Power Query (M)</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Modélisation Étoile (Star Schema)</span>
+                            <span class="skill-level">Solide</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Définition &amp; Suivi de KPI</span>
+                            <span class="skill-level">Expertise</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Intégration SharePoint BI</span>
+                            <span class="skill-level">Opérationnel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Data Processing & Python -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fab fa-python"></i></div>
+                        <div>
+                            <h3 data-i18n="skills.cat2Title">Traitement de Données &amp; Python</h3>
+                            <span class="cat-subtitle" data-i18n="skills.cat2Sub">Analyse, Automatisation &amp; EDA</span>
+                        </div>
+                    </div>
+                    <div class="skill-pill-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">SQL (Requêtes complexes, CTE, Fenêtres)</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Python (Pandas, NumPy)</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Matplotlib &amp; Seaborn</span>
+                            <span class="skill-level">Solide</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Scripts d'Automatisation ETL</span>
+                            <span class="skill-level">Opérationnel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Jupyter Notebooks / VS Code</span>
+                            <span class="skill-level">Quotidien</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: Cloud & Databases -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fas fa-cloud"></i></div>
+                        <div>
+                            <h3 data-i18n="skills.cat3Title">Cloud &amp; Bases de Données</h3>
+                            <span class="cat-subtitle" data-i18n="skills.cat3Sub">Infrastructure &amp; Stockage</span>
+                        </div>
+                    </div>
+                    <div class="skill-pill-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">Google Cloud Platform (GCP)</span>
+                            <span class="skill-level">Opérationnel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Google BigQuery</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">PostgreSQL &amp; MySQL</span>
+                            <span class="skill-level">Solide</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">SQLite</span>
+                            <span class="skill-level">Opérationnel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Optimisation de Requêtes</span>
+                            <span class="skill-level">Solide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4: DevOps, IA & Méthodes -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fas fa-robot"></i></div>
+                        <div>
+                            <h3 data-i18n="skills.cat4Title">Outils, GenAI &amp; Méthodes</h3>
+                            <span class="cat-subtitle" data-i18n="skills.cat4Sub">Déploiement &amp; Innovation</span>
+                        </div>
+                    </div>
+                    <div class="skill-pill-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">Azure DevOps (CI/CD, Work Items)</span>
+                            <span class="skill-level">Opérationnel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Git &amp; GitHub</span>
+                            <span class="skill-level">Quotidien</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Agent Gemini &amp; Microsoft Copilot</span>
+                            <span class="skill-level">Innovation BI</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Méthodologie Agile (Scrum / Kanban)</span>
+                            <span class="skill-level">Pratiqué</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">SharePoint Administration</span>
+                            <span class="skill-level">Opérationnel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="projects.tag">// PARCOURS &amp; RÉALISATIONS</div>
+                <h2 class="section-title" data-i18n="projects.title">Expériences Professionnelles</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Missions opérationnelles menées en environnement industriel exigeant.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Experience 1: Manitou Group -->
+                <div class="project-card featured">
+                    <div class="card-glow-accent"></div>
+                    <div class="project-header">
+                        <div class="company-badge">
+                            <i class="fas fa-building"></i> Manitou Group • Ancenis
+                        </div>
+                        <span class="project-period"><i class="fas fa-calendar-alt"></i> Septembre 2025 – Juillet 2026</span>
+                    </div>
+
+                    <h3 class="project-title" data-i18n="projects.manitouTitle">Data Analyst en alternance — Direction Opérationnelle</h3>
+                    <p class="project-desc" data-i18n="projects.manitouDesc">
+                        Manitou Group est un leader mondial de la manutention et de l'élévation. Dans le cadre de mon alternance MIAGE, j'ai accompagné la prise de décision opérationnelle via l'industrialisation des flux de données et la mise en œuvre de solutions BI novatrices.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.manitouBullet1"><strong>Définition &amp; Suivi des KPI :</strong> Cadrage, calcul et validation d'indicateurs de performance clés en collaboration étroite avec les équipes métiers.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.manitouBullet2"><strong>Ingénierie des données sur GCP :</strong> Préparation, enrichissement et modélisation des données avec SQL et BigQuery, en créant des tables et colonnes calculées optimisées.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.manitouBullet3"><strong>Modèles Power BI &amp; Azure DevOps :</strong> Évolution des jeux de données sémantiques, gouvernance des versions et déploiement via Azure DevOps.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.manitouBullet4"><strong>Agent Conversationnel Gemini vs Copilot :</strong> Développement d'un agent conversationnel Gemini pour l'interrogation de données en langage naturel ; benchmark comparatif face à Microsoft Copilot et restitution des résultats à la direction.</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tech-tags">
+                        <span>GCP BigQuery</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Azure DevOps</span>
+                        <span>Gemini Agent</span>
+                        <span>Microsoft Copilot</span>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Vibracoustic -->
+                <div class="project-card">
+                    <div class="card-glow-accent"></div>
+                    <div class="project-header">
+                        <div class="company-badge">
+                            <i class="fas fa-car"></i> Vibracoustic • Carquefou
+                        </div>
+                        <span class="project-period"><i class="fas fa-calendar-alt"></i> Septembre 2023 – Août 2024</span>
+                    </div>
+
+                    <h3 class="project-title" data-i18n="projects.vibraTitle">Digitalisation de Laboratoire d'Essais en alternance</h3>
+                    <p class="project-desc" data-i18n="projects.vibraDesc">
+                        Vibracoustic est un équipementier automobile de rang 1 spécialiste des systèmes anti-vibratoires. Mission d'optimisation des flux et digitalisation complète des processus du laboratoire d'essais.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.vibraBullet1"><strong>KPI Réactivité Machines :</strong> Définition et validation conjointe des indicateurs de temps de cycle et de disponibilité des bancs d'essais.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.vibraBullet2"><strong>Analytique Python :</strong> Calcul, traitement statistique et visualisation automatisée des métriques avec Python (Pandas, NumPy, Matplotlib).</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.vibraBullet3"><strong>Tableau de Bord FIFO Échantillons :</strong> Conception intégrale d'un rapport Power BI de gestion FIFO des échantillons d'essais et publication sur SharePoint pour l'ensemble des techniciens.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.vibraBullet4"><strong>Administration SharePoint :</strong> Développement de fonctionnalités sur mesure, centralisation des ressources du laboratoire et maintenance du portail.</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tech-tags">
+                        <span>Python (Pandas, NumPy)</span>
+                        <span>Matplotlib</span>
+                        <span>Power BI</span>
+                        <span>SharePoint</span>
+                        <span>Gestion FIFO</span>
+                    </div>
+                </div>
+
+                <!-- Technical Project 3: GenAI Conversational BI Engine -->
+                <div class="project-card">
+                    <div class="card-glow-accent"></div>
+                    <div class="project-header">
+                        <div class="company-badge">
+                            <i class="fas fa-brain"></i> Projet d'Innovation BI &amp; GenAI
+                        </div>
+                        <span class="project-period"><i class="fas fa-microchip"></i> 2025 – 2026</span>
+                    </div>
+
+                    <h3 class="project-title" data-i18n="projects.genaiTitle">Agent Conversationnel BI &amp; Benchmark LLM</h3>
+                    <p class="project-desc" data-i18n="projects.genaiDesc">
+                        Étude comparative et prototypage d'assistants intelligents pour l'exploration de données BI sans requêtes SQL manuelles pour les décideurs métiers.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.genaiBullet1">Architecture d'un agent Gemini connecté aux sources décisionnelles pour traduire des questions métier en analyses directes.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.genaiBullet2">Évaluation rigoureuse des hallucinations, de la fidélité des KPI et de la pertinence des réponses face à Microsoft Copilot.</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tech-tags">
+                        <span>Gemini API</span>
+                        <span>Microsoft Copilot</span>
+                        <span>Prompt Engineering</span>
+                        <span>SQL Translation</span>
+                    </div>
+                </div>
+
+                <!-- Technical Project 4: FIFO & Test Bench Optimization -->
+                <div class="project-card">
+                    <div class="card-glow-accent"></div>
+                    <div class="project-header">
+                        <div class="company-badge">
+                            <i class="fas fa-cogs"></i> Digitalisation Opérationnelle
+                        </div>
+                        <span class="project-period"><i class="fas fa-chart-simple"></i> 2024</span>
+                    </div>
+
+                    <h3 class="project-title" data-i18n="projects.fifoTitle">Système de Suivi FIFO &amp; Monitoring d'Échantillons</h3>
+                    <p class="project-desc" data-i18n="projects.fifoDesc">
+                        Plateforme intégrée Power BI et SharePoint permettant de réduire les temps d'attente des échantillons d'essais et d'améliorer la traçabilité des pièces d'essai automobile.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.fifoBullet1">Visibilité en temps réel sur les stocks d'échantillons et priorisation automatique selon la règle FIFO.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="projects.fifoBullet2">Adoption immédiate par l'équipe du laboratoire grâce à une interface ergonomique et intuitive.</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tech-tags">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>SharePoint</span>
+                        <span>Process Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="credentials-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="edu.tag">// FORMATION &amp; ACCRÉDITATIONS</div>
+                <h2 class="section-title" data-i18n="edu.title">Parcours Académique &amp; Certifications</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="edu.subtitle">Un cursus universitaire complet associant informatique appliquée et sciences cognitives.</p>
+            </div>
+
+            <div class="credentials-grid">
+                <!-- Left: Academic Degrees -->
+                <div class="timeline-column">
+                    <h3 class="column-title"><i class="fas fa-graduation-cap"></i> <span data-i18n="edu.degreesTitle">Diplômes Universitaires</span></h3>
+
+                    <div class="timeline-stream">
+                        <!-- Degree 1 -->
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-period">2025 – 2026 | Alternance | Bac+3</div>
+                            <h4 class="timeline-title" data-i18n="edu.miageTitle">Licence informatique MIAGE</h4>
+                            <div class="timeline-place"><i class="fas fa-university"></i> Nantes Université</div>
+                            <p class="timeline-desc" data-i18n="edu.miageDesc">
+                                Méthodes Informatiques Appliquées à la Gestion des Entreprises. Spécialisation en bases de données avancées, systèmes décisionnels, modélisation logicielle et gouvernance des systèmes d'information.
+                            </p>
+                        </div>
+
+                        <!-- Degree 2 -->
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-period">2022 – 2024 | Alternance | Bac+2</div>
+                            <h4 class="timeline-title" data-i18n="edu.btsTitle">BTS Services Informatiques aux Organisations (SIO)</h4>
+                            <div class="timeline-place"><i class="fas fa-school"></i> Lycée Carcouet, Nantes</div>
+                            <p class="timeline-desc" data-i18n="edu.btsDesc">
+                                Option SLAM (Solutions logicielles et applications métiers). Développement orienté objet, bases de données relationnelles, SQL, algorithmique et méthodes de génie logiciel.
+                            </p>
+                        </div>
+
+                        <!-- Degree 3 -->
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-period">2013 – 2019 | Bac+3 / Bachelor</div>
+                            <h4 class="timeline-title" data-i18n="edu.psyTitle">Licence en Psychologie</h4>
+                            <div class="timeline-place"><i class="fas fa-globe"></i> Middle East Technical University (METU / ODTÜ), Ankara, Turquie</div>
+                            <p class="timeline-desc" data-i18n="edu.psyDesc">
+                                L'une des universités scientifiques les plus réputées du Moyen-Orient. Formation poussée en statistiques descriptives et inférentielles, méthodologie de recherche quantitative et analyse des comportements cognitifs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Certifications & Languages -->
+                <div class="certs-column">
+                    <h3 class="column-title"><i class="fas fa-certificate"></i> <span data-i18n="edu.certsTitle">Certifications &amp; Langues</span></h3>
+
+                    <div class="certs-list">
+                        <!-- Cert 1 -->
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                            <div class="cert-content">
+                                <h4 class="cert-name">Career Essentials in Data Analysis</h4>
+                                <span class="cert-issuer">Microsoft &amp; LinkedIn (2024)</span>
+                                <p class="cert-desc" data-i18n="edu.cert1Desc">Validation des compétences clés en analyse de données, modélisation décisionnelle et visual storytelling.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 2 -->
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                            <div class="cert-content">
+                                <h4 class="cert-name">Anaconda Python for Data Science</h4>
+                                <span class="cert-issuer">Anaconda Professional Certificate (2024)</span>
+                                <p class="cert-desc" data-i18n="edu.cert2Desc">Maîtrise de l'environnement Anaconda, manipulation de données avec Pandas et visualisation statistique.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 3 -->
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-terminal"></i></div>
+                            <div class="cert-content">
+                                <h4 class="cert-name">Data Analyst in Python Career Track</h4>
+                                <span class="cert-issuer">DataCamp (Depuis Juin 2026)</span>
+                                <p class="cert-desc" data-i18n="edu.cert3Desc">Perfectionnement continu sur les algorithmes de nettoyage, SQL interactif et analyse exploratoire.</p>
+                            </div>
+                        </div>
+
+                        <!-- Languages Card -->
+                        <div class="cert-card lang-card">
+                            <div class="cert-icon"><i class="fas fa-comments"></i></div>
+                            <div class="cert-content">
+                                <h4 class="cert-name" data-i18n="edu.langHeader">Compétences Linguistiques</h4>
+                                <div class="lang-meters">
+                                    <div class="lang-row">
+                                        <span class="lang-name" data-i18n="edu.langFr">Français</span>
+                                        <span class="lang-level">C2 (Bilingue) — DUEF Nantes Université</span>
+                                    </div>
+                                    <div class="lang-progress"><div class="lang-fill" style="width: 100%;"></div></div>
+
+                                    <div class="lang-row">
+                                        <span class="lang-name" data-i18n="edu.langEn">Anglais</span>
+                                        <span class="lang-level" data-i18n="edu.langEnLevel">Maîtrise professionnelle (C1)</span>
+                                    </div>
+                                    <div class="lang-progress"><div class="lang-fill" style="width: 90%;"></div></div>
+
+                                    <div class="lang-row">
+                                        <span class="lang-name" data-i18n="edu.langTr">Turc</span>
+                                        <span class="lang-level" data-i18n="edu.langTrLevel">Langue maternelle</span>
+                                    </div>
+                                    <div class="lang-progress"><div class="lang-fill" style="width: 100%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Query Intake Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="contact.tag">// CONTACTEZ-MOI</div>
+                <h2 class="section-title" data-i18n="contact.title">Initier un Échange</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Vous recherchez un Data Analyst junior autonome, rigoureux et opérationnel ? Échangeons dès aujourd'hui.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Telemetry Contact Cards -->
+                <div class="contact-info-cards">
+                    <a href="mailto:ercanlimuratcan@gmail.com" class="contact-pill-card">
+                        <div class="pill-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="pill-details">
+                            <span class="pill-label" data-i18n="contact.emailLabel">Adresse Email</span>
+                            <span class="pill-value">ercanlimuratcan@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square external-indicator"></i>
+                    </a>
+
+                    <a href="tel:+33669262298" class="contact-pill-card">
+                        <div class="pill-icon"><i class="fas fa-phone"></i></div>
+                        <div class="pill-details">
+                            <span class="pill-label" data-i18n="contact.phoneLabel">Téléphone</span>
+                            <span class="pill-value">+33 6 69 26 22 98</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square external-indicator"></i>
+                    </a>
+
+                    <a href="https://github.com/muratcanercanli" target="_blank" rel="noopener noreferrer" class="contact-pill-card">
+                        <div class="pill-icon"><i class="fab fa-github"></i></div>
+                        <div class="pill-details">
+                            <span class="pill-label" data-i18n="contact.githubLabel">Profil GitHub</span>
+                            <span class="pill-value">github.com/muratcanercanli</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square external-indicator"></i>
+                    </a>
+
+                    <div class="contact-pill-card non-clickable">
+                        <div class="pill-icon"><i class="fas fa-location-dot"></i></div>
+                        <div class="pill-details">
+                            <span class="pill-label" data-i18n="contact.locLabel">Localisation</span>
+                            <span class="pill-value" data-i18n="contact.locVal">Nantes (44300), France</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-pill-card non-clickable">
+                        <div class="pill-icon"><i class="fas fa-id-badge"></i></div>
+                        <div class="pill-details">
+                            <span class="pill-label" data-i18n="contact.availLabel">Statut &amp; Disponibilité</span>
+                            <span class="pill-value" data-i18n="contact.availVal">Recherche CDI • Prise de poste immédiate</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta-box">
+                        <h4 data-i18n="contact.ctaTitle">Téléchargez le CV complet</h4>
+                        <p data-i18n="contact.ctaDesc">Format PDF standard pour transmission interne ou ATS.</p>
+                        <a href="Murat_ERCANLI_LaTeX_Source (2).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> <span data-i18n="contact.ctaBtn">Curriculum Vitae (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Direct Message Form Console -->
+                <div class="contact-form-card">
+                    <div class="bio-card-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">contact_transmission.sh</span>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" data-i18n="contact.formName">Votre Nom / Entreprise *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Ex: Jean Dupont (Recrutement)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email" data-i18n="contact.formEmail">Votre Adresse Email *</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="nom@entreprise.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" data-i18n="contact.formSubject">Objet du Message *</label>
+                            <input type="text" id="contact-subject" name="subject" required placeholder="Opportunité CDI Data Analyst - Nantes">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" data-i18n="contact.formMessage">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Bonjour Murat, nous avons découvert votre profil..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="contact.formSubmit">Envoyer le Message</span>
+                        </button>
+                        <p class="form-notice" data-i18n="contact.formNotice">
+                            <i class="fas fa-shield-alt"></i> Vos coordonnées ne seront utilisées que pour vous répondre directement.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="logo-terminal">&gt;_</span>
+                <span class="footer-name">Murat Can ERCANLI</span>
+                <span class="footer-copy">© 2026. <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+            </div>
+
+            <div class="footer-status">
+                <span class="pulse-dot"></span>
+                <span data-i18n="footer.status">Statut Système : À l'écoute de nouvelles opportunités en CDI</span>
+            </div>
+
+            <div class="footer-right">
+                <a href="#home" class="back-to-top" aria-label="Retour en haut" title="Haut de page">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+

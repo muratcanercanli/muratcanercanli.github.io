@@ -12,9 +12,16 @@ Site portfolio bilingue (Français / Anglais) moderne, responsive et interactif 
 - **Effet Machine à Écrire (Typewriter)** : Défilement animé des rôles clés (Data Analyst Junior, Spécialiste BI, Modélisateur Power BI & DAX, etc.).
 - **Télémétrie Flottante & Carte Avatar** : Photo haute résolution extraite du CV original avec badges animés (`Power BI & DAX`, `GCP BigQuery & SQL`, `Python / Pandas`, `Gemini BI Agent`).
 - **Pipeline Décisionnel & Méthodologie** : Décomposition en 3 étapes (Extraction Cloud BigQuery $\rightarrow$ Modélisation DAX $\rightarrow$ Restitution BI & IA).
-- **Parcours Professionnel Complet** :
-  - **Manitou Group** (Alternance Data Analyst) : KPIs, GCP BigQuery, modèles Power BI, agent Gemini vs Copilot.
-  - **Vibracoustic** (Alternance Digitalisation de Laboratoire) : KPIs réactivité bancs d'essais, Python (NumPy/Pandas/Matplotlib), dashboard FIFO SharePoint.
+- **Parcours Professionnel & Études de Cas BI** :
+  - **Manitou Group** (Alternance Data Analyst) : Architecture de gouvernance Power BI de haut niveau (BigQuery, API REST, enrichissement RH, Azure DevOps), agent Gemini vs Copilot.
+  - **Vibracoustic** (Alternance Digitalisation de Laboratoire) : KPIs réactivité bancs d'essais, Python (NumPy/Pandas/Matplotlib), dashboard interactif Power BI de suivi FIFO.
+- **Veille Technologique (`veille.js`)** : Architecture complète pilotée par les données (`VEILLE_ENTRIES`) comprenant :
+  - **3 Domaines de surveillance** filtrants (`Data Analytics`, `Artificial Intelligence`, `Business Intelligence`),
+  - **Radar « Tendances à suivre »** (5 cartes synthétiques avec lecteur modale),
+  - **Analyses détaillées structurées** (*Ce qu'il faut retenir*, *Pourquoi c'est important*, *Impact métier*, *Mon analyse*, tags cliquables, liens vers les projets du portfolio et liens sources officiels),
+  - **Frise chronologique automatique (`Évolution de ma veille`)**,
+  - **Méthodologie en 4 étapes (`Surveiller → Sélectionner → Analyser → Capitaliser`)** & **Sources suivies catégorisées**,
+  - **Aperçu compact avant Contact** affichant dynamiquement les 3 dernières analyses.
 - **Diplômes & Certifications** : Licence MIAGE (Nantes Université), BTS SIO SLAM, Licence Psychologie (METU), Certifications Microsoft, Anaconda, DataCamp.
 - **Téléchargement Direct du CV** : Lié au fichier PDF officiel `Murat_ERCANLI_LaTeX_Source (2).pdf`.
 - **Formulaire de Contact Terminal** : Interface interactive connectée à votre messagerie via `mailto:`.
@@ -26,8 +33,10 @@ Site portfolio bilingue (Français / Anglais) moderne, responsive et interactif 
 ```text
 d:\muro_cv/
 ├── index.html                           # Structure sémantique bilingue & métadonnées SEO/OpenGraph
-├── styles.css                           # Feuilles de styles CSS (tokens, responsive, glassmorphism, thèmes)
+├── styles.css                           # Feuilles de styles CSS (tokens, responsive, Power BI Service UI, Veille, thèmes)
 ├── script.js                            # Moteur JS (Canvas mesh, dictionnaire i18n FR/EN, typewriter, thème)
+├── dashboard.js                         # Reconstruction interactive Power BI : Suivi FIFO Laboratoire (44 échantillons synthétiques)
+├── veille.js                            # Module data-driven Veille Technologique (domaines, 5 entrées, filtres, recherche, timeline, méthodologie)
 ├── murat_profile.png                    # Portrait haute résolution extrait du CV
 ├── Murat_ERCANLI_LaTeX_Source (2).pdf   # CV original téléchargeable
 └── README.md                            # Documentation du projet

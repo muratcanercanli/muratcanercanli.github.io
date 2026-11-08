@@ -76,16 +76,39 @@
                 <li class="nav-item"><a href="#frameworks" class="nav-link" data-i18n="nav.workflow">Méthodologie</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link" data-i18n="nav.toolkit">Compétences</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                <li class="nav-item nav-dropdown">
+                    <a href="#bi-governance" class="nav-link nav-dropdown-toggle" id="nav-projects-link">
+                        <span data-i18n="nav.projectsMenu">Projets</span>
+                        <i class="fas fa-chevron-down nav-caret"></i>
+                    </a>
+                    <ul class="nav-dropdown-menu" aria-label="Projects submenu">
+                        <li>
+                            <a href="#bi-governance" class="nav-dropdown-item">
+                                <i class="fas fa-sitemap"></i>
+                                <span data-i18n="nav.bigov">Gouvernance Power BI (IT &amp; Métier)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#bi-project" class="nav-dropdown-item">
+                                <i class="fas fa-chart-pie"></i>
+                                <span data-i18n="nav.biproject">Laboratoire FIFO &amp; Bancs d'Essais</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="veille.html" class="nav-link" data-i18n="nav.veille">Veille</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link" data-i18n="nav.credentials">Formation</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
-                <!-- Language Switcher Pill -->
-                <div class="lang-switch" id="lang-switch" title="Changer de langue / Switch language">
+                <!-- Language Switcher Pill (FR / EN / TR) -->
+                <div class="lang-switch" id="lang-switch" title="Changer de langue / Switch language / Dili değiştir">
                     <button class="lang-btn active" data-lang="fr">FR</button>
                     <span class="lang-divider">/</span>
                     <button class="lang-btn" data-lang="en">EN</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="tr">TR</button>
                 </div>
 
                 <!-- Theme Toggle Button -->
@@ -319,9 +342,9 @@
                         Conception de rapports visuels clairs et ergonomiques. Déploiement sécurisé sur Power BI Service / SharePoint et enrichissement avec des agents IA (Gemini &amp; Copilot) pour l'exploration en langage naturel.
                     </p>
                     <div class="workflow-tags">
-                        <span>Tableaux de Bord</span>
+                        <span data-i18n="workflow.tagDashboards">Tableaux de Bord</span>
                         <span>GenAI Agents</span>
-                        <span>Adoption Métier</span>
+                        <span data-i18n="workflow.tagAdoption">Adoption Métier</span>
                     </div>
                 </div>
             </div>
@@ -351,23 +374,23 @@
                     <div class="skill-pill-list">
                         <div class="skill-pill">
                             <span class="skill-name">Power BI (Desktop &amp; Service)</span>
-                            <span class="skill-level">Avancé</span>
+                            <span class="skill-level" data-i18n="skills.lvlAdvanced">Avancé</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">DAX &amp; Power Query (M)</span>
-                            <span class="skill-level">Avancé</span>
+                            <span class="skill-level" data-i18n="skills.lvlAdvanced">Avancé</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Modélisation Étoile (Star Schema)</span>
-                            <span class="skill-level">Solide</span>
+                            <span class="skill-name" data-i18n="skills.s1_3">Modélisation Étoile (Star Schema)</span>
+                            <span class="skill-level" data-i18n="skills.lvlSolid">Solide</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Définition &amp; Suivi de KPI</span>
-                            <span class="skill-level">Expertise</span>
+                            <span class="skill-name" data-i18n="skills.s1_4">Définition &amp; Suivi de KPI</span>
+                            <span class="skill-level" data-i18n="skills.lvlExpertise">Expertise</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Intégration SharePoint BI</span>
-                            <span class="skill-level">Opérationnel</span>
+                            <span class="skill-name" data-i18n="skills.s1_5">Intégration SharePoint BI</span>
+                            <span class="skill-level" data-i18n="skills.lvlOperational">Opérationnel</span>
                         </div>
                     </div>
                 </div>
@@ -383,24 +406,24 @@
                     </div>
                     <div class="skill-pill-list">
                         <div class="skill-pill">
-                            <span class="skill-name">SQL (Requêtes complexes, CTE, Fenêtres)</span>
-                            <span class="skill-level">Avancé</span>
+                            <span class="skill-name" data-i18n="skills.s2_1">SQL (Requêtes complexes, CTE, Fenêtres)</span>
+                            <span class="skill-level" data-i18n="skills.lvlAdvanced">Avancé</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">Python (Pandas, NumPy)</span>
-                            <span class="skill-level">Avancé</span>
+                            <span class="skill-level" data-i18n="skills.lvlAdvanced">Avancé</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">Matplotlib &amp; Seaborn</span>
-                            <span class="skill-level">Solide</span>
+                            <span class="skill-level" data-i18n="skills.lvlSolid">Solide</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Scripts d'Automatisation ETL</span>
-                            <span class="skill-level">Opérationnel</span>
+                            <span class="skill-name" data-i18n="skills.s2_4">Scripts d'Automatisation ETL</span>
+                            <span class="skill-level" data-i18n="skills.lvlOperational">Opérationnel</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">Jupyter Notebooks / VS Code</span>
-                            <span class="skill-level">Quotidien</span>
+                            <span class="skill-level" data-i18n="skills.lvlDaily">Quotidien</span>
                         </div>
                     </div>
                 </div>
@@ -417,23 +440,23 @@
                     <div class="skill-pill-list">
                         <div class="skill-pill">
                             <span class="skill-name">Google Cloud Platform (GCP)</span>
-                            <span class="skill-level">Opérationnel</span>
+                            <span class="skill-level" data-i18n="skills.lvlOperational">Opérationnel</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">Google BigQuery</span>
-                            <span class="skill-level">Avancé</span>
+                            <span class="skill-level" data-i18n="skills.lvlAdvanced">Avancé</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">PostgreSQL &amp; MySQL</span>
-                            <span class="skill-level">Solide</span>
+                            <span class="skill-level" data-i18n="skills.lvlSolid">Solide</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">SQLite</span>
-                            <span class="skill-level">Opérationnel</span>
+                            <span class="skill-level" data-i18n="skills.lvlOperational">Opérationnel</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Optimisation de Requêtes</span>
-                            <span class="skill-level">Solide</span>
+                            <span class="skill-name" data-i18n="skills.s3_5">Optimisation de Requêtes</span>
+                            <span class="skill-level" data-i18n="skills.lvlSolid">Solide</span>
                         </div>
                     </div>
                 </div>
@@ -450,23 +473,23 @@
                     <div class="skill-pill-list">
                         <div class="skill-pill">
                             <span class="skill-name">Azure DevOps (CI/CD, Work Items)</span>
-                            <span class="skill-level">Opérationnel</span>
+                            <span class="skill-level" data-i18n="skills.lvlOperational">Opérationnel</span>
                         </div>
                         <div class="skill-pill">
                             <span class="skill-name">Git &amp; GitHub</span>
-                            <span class="skill-level">Quotidien</span>
+                            <span class="skill-level" data-i18n="skills.lvlDaily">Quotidien</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Agent Gemini &amp; Microsoft Copilot</span>
-                            <span class="skill-level">Innovation BI</span>
+                            <span class="skill-name" data-i18n="skills.s4_3">Agent Gemini &amp; Microsoft Copilot</span>
+                            <span class="skill-level" data-i18n="skills.lvlInnovation">Innovation BI</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">Méthodologie Agile (Scrum / Kanban)</span>
-                            <span class="skill-level">Pratiqué</span>
+                            <span class="skill-name" data-i18n="skills.s4_4">Méthodologie Agile (Scrum / Kanban)</span>
+                            <span class="skill-level" data-i18n="skills.lvlPracticed">Pratiqué</span>
                         </div>
                         <div class="skill-pill">
-                            <span class="skill-name">SharePoint Administration</span>
-                            <span class="skill-level">Opérationnel</span>
+                            <span class="skill-name" data-i18n="skills.s4_5">SharePoint Administration</span>
+                            <span class="skill-level" data-i18n="skills.lvlOperational">Opérationnel</span>
                         </div>
                     </div>
                 </div>
@@ -492,7 +515,7 @@
                         <div class="company-badge">
                             <i class="fas fa-building"></i> Manitou Group • Ancenis
                         </div>
-                        <span class="project-period"><i class="fas fa-calendar-alt"></i> Septembre 2025 – Juillet 2026</span>
+                        <span class="project-period"><i class="fas fa-calendar-alt"></i> <span data-i18n="projects.manitouPeriod">Septembre 2025 – Juillet 2026</span></span>
                     </div>
 
                     <h3 class="project-title" data-i18n="projects.manitouTitle">Data Analyst en alternance — Direction Opérationnelle</h3>
@@ -528,6 +551,12 @@
                         <span>Gemini Agent</span>
                         <span>Microsoft Copilot</span>
                     </div>
+
+                    <div style="margin-top: 1.25rem;">
+                        <a href="#bi-governance" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.45rem 0.95rem;">
+                            <i class="fas fa-sitemap"></i> <span data-i18n="projects.manitouBtn">Explorer le projet Gouvernance Power BI (IT &amp; Métier)</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Experience 2: Vibracoustic -->
@@ -537,7 +566,7 @@
                         <div class="company-badge">
                             <i class="fas fa-car"></i> Vibracoustic • Carquefou
                         </div>
-                        <span class="project-period"><i class="fas fa-calendar-alt"></i> Septembre 2023 – Août 2024</span>
+                        <span class="project-period"><i class="fas fa-calendar-alt"></i> <span data-i18n="projects.vibraPeriod">Septembre 2023 – Août 2024</span></span>
                     </div>
 
                     <h3 class="project-title" data-i18n="projects.vibraTitle">Digitalisation de Laboratoire d'Essais en alternance</h3>
@@ -569,7 +598,13 @@
                         <span>Matplotlib</span>
                         <span>Power BI</span>
                         <span>SharePoint</span>
-                        <span>Gestion FIFO</span>
+                        <span data-i18n="projects.tagFifo">Gestion FIFO</span>
+                    </div>
+
+                    <div style="margin-top: 1.25rem;">
+                        <a href="#bi-project" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.45rem 0.95rem;">
+                            <i class="fas fa-chart-pie"></i> <span data-i18n="projects.vibraBtn">Explorer le tableau de bord interactif</span>
+                        </a>
                     </div>
                 </div>
 
@@ -578,7 +613,7 @@
                     <div class="card-glow-accent"></div>
                     <div class="project-header">
                         <div class="company-badge">
-                            <i class="fas fa-brain"></i> Projet d'Innovation BI &amp; GenAI
+                            <i class="fas fa-brain"></i> <span data-i18n="projects.genaiBadge">Projet d'Innovation BI &amp; GenAI</span>
                         </div>
                         <span class="project-period"><i class="fas fa-microchip"></i> 2025 – 2026</span>
                     </div>
@@ -612,7 +647,7 @@
                     <div class="card-glow-accent"></div>
                     <div class="project-header">
                         <div class="company-badge">
-                            <i class="fas fa-cogs"></i> Digitalisation Opérationnelle
+                            <i class="fas fa-cogs"></i> <span data-i18n="projects.fifoBadge">Digitalisation Opérationnelle</span>
                         </div>
                         <span class="project-period"><i class="fas fa-chart-simple"></i> 2024</span>
                     </div>
@@ -644,6 +679,655 @@
         </div>
     </section>
 
+    <!-- Enterprise Power BI Monitoring & Governance Section -->
+    <section id="bi-governance" class="bi-gov-section">
+        <div class="container">
+            <div class="section-header bi-gov-hero">
+                <div class="section-tag" data-i18n="bigov.tag">// PROJET BI D'ENTREPRISE — MODÈLE DE PRODUCTION &amp; GOUVERNANCE</div>
+                <h2 class="section-title" data-i18n="bigov.title">Monitoring &amp; Gouvernance Power BI d'Entreprise</h2>
+                <div class="gov-subtitle-pill" data-i18n="bigov.subtitlePill">Modèle de Données de Production · Enrichissement KPI · Tableaux de Bord IT &amp; Métier</div>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="bigov.intro">
+                    Enrichissement d'une solution existante de monitoring Power BI d'entreprise par l'extension de son modèle de données de production et de sa couche KPI, en combinant la télémétrie plateforme Power BI avec le contexte métier/RH pour alimenter deux tableaux de bord distincts : l'un dédié aux administrateurs IT et l'autre aux Data Owners et responsables de département.
+                </p>
+                <div class="tech-tag-row">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">BigQuery</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Power BI REST API</span>
+                    <span class="tech-tag">Azure DevOps</span>
+                    <span class="tech-tag">Data Modelling</span>
+                    <span class="tech-tag">KPI Design</span>
+                    <span class="tech-tag">Data Governance</span>
+                </div>
+            </div>
+
+            <!-- Architecture & Production Pipeline Overview Grid -->
+            <div class="gov-arch-pipeline-grid">
+                
+                <!-- Left: Compact Architecture Diagram (Interactive High-Level Nodes) -->
+                <div class="gov-arch-card">
+                    <div class="gov-arch-header">
+                        <div>
+                            <span class="gov-arch-eyebrow" data-i18n="bigov.archEyebrow">ARCHITECTURE DE LA FONDATION DE DONNÉES PARTAGÉE</span>
+                            <h3 class="gov-arch-title" data-i18n="bigov.archTitle">Une Source Gouvernée Unique — Deux Audiences Cibles</h3>
+                        </div>
+                        <span class="gov-prod-badge">
+                            <span class="pbi-live-dot"></span>
+                            <span data-i18n="bigov.prodBadge">DÉPLOYÉ EN PRODUCTION</span>
+                        </span>
+                    </div>
+
+                    <div class="gov-arch-flow">
+                        <!-- Tier 1: Dual Sources -->
+                        <div class="gov-arch-sources">
+                            <div class="gov-arch-node gov-node-source active" data-gov-node="api" role="button" tabindex="0">
+                                <i class="fas fa-plug-circle-bolt"></i>
+                                <div>
+                                    <strong>Power BI REST API</strong>
+                                    <small data-i18n="bigov.srcApiSub">Télémétrie plateforme, espaces, rapports, licences</small>
+                                </div>
+                            </div>
+                            <div class="gov-arch-plus">+</div>
+                            <div class="gov-arch-node gov-node-source gov-node-hr" data-gov-node="hr" role="button" tabindex="0">
+                                <i class="fas fa-sitemap"></i>
+                                <div>
+                                    <strong data-i18n="bigov.srcHrTitle">Données Métier / RH</strong>
+                                    <small data-i18n="bigov.srcHrSub">Départements, Business Units, Data Owners, Organisation</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gov-arch-arrow"><i class="fas fa-arrow-down"></i></div>
+
+                        <!-- Tier 2: BigQuery & SQL -->
+                        <div class="gov-arch-node gov-node-bq" data-gov-node="bq" role="button" tabindex="0">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <strong data-i18n="bigov.nodeBqTitle">BigQuery — Dataset de Monitoring Partagé</strong>
+                                <small data-i18n="bigov.nodeBqSub">Transformations SQL, contrôles de doublons, intégrité référentielle &amp; évolution de schéma</small>
+                            </div>
+                        </div>
+
+                        <div class="gov-arch-arrow"><i class="fas fa-arrow-down"></i></div>
+
+                        <!-- Tier 3: Production Semantic Model -->
+                        <div class="gov-arch-node gov-node-model" data-gov-node="model" role="button" tabindex="0">
+                            <i class="fas fa-cubes"></i>
+                            <div>
+                                <strong data-i18n="bigov.nodeModelTitle">Modèle de Données de Production &amp; Couche KPI DAX</strong>
+                                <small data-i18n="bigov.nodeModelSub">UNE FONDATION PARTAGÉE — DEUX AUDIENCES</small>
+                            </div>
+                        </div>
+
+                        <div class="gov-arch-split-arrows">
+                            <span><i class="fas fa-arrow-down"></i></span>
+                            <span><i class="fas fa-arrow-down"></i></span>
+                        </div>
+
+                        <!-- Tier 4: Dual Target Audiences (High-Level) -->
+                        <div class="gov-arch-audiences">
+                            <div class="gov-arch-target" id="gov-arch-node-admin" data-gov-node="admin" role="button" tabindex="0">
+                                <div class="gov-target-head">
+                                    <i class="fas fa-server"></i>
+                                    <strong data-i18n="bigov.archAdminTitle">Audience 1 : Administration IT</strong>
+                                </div>
+                                <ul class="gov-target-list">
+                                    <li data-i18n="bigov.archAdmin1">Supervision technique &amp; capacité</li>
+                                    <li data-i18n="bigov.archAdmin2">Cycle de vie des espaces &amp; actifs</li>
+                                </ul>
+                            </div>
+
+                            <div class="gov-arch-target" id="gov-arch-node-owner" data-gov-node="owner" role="button" tabindex="0">
+                                <div class="gov-target-head">
+                                    <i class="fas fa-briefcase"></i>
+                                    <strong data-i18n="bigov.archOwnerTitle">Audience 2 : Data Owners Métier</strong>
+                                </div>
+                                <ul class="gov-target-list">
+                                    <li data-i18n="bigov.archOwner1">Adoption par direction &amp; Business Unit</li>
+                                    <li data-i18n="bigov.archOwner2">Gouvernance &amp; Data Ownership</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- High-Level Interactive Architecture Node Inspector Callout -->
+                        <div class="gov-node-inspector" id="gov-node-inspector">
+                            <div class="gov-inspector-head">
+                                <i class="fas fa-circle-info"></i>
+                                <span id="gov-inspector-title" data-i18n="bigov.inspApiTitle">Power BI REST API — Extraction Télémétrie</span>
+                                <span class="gov-inspector-hint" data-i18n="bigov.inspHint">Cliquez sur un bloc d'architecture pour afficher son rôle technique</span>
+                            </div>
+                            <p id="gov-inspector-desc" data-i18n="bigov.inspApiDesc">
+                                Collecte automatisée des métadonnées d'espaces de travail, rapports, jeux de données et journaux d'activité pour historiser l'usage au-delà de la rétention native de 30 jours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Production Data Engineering Story + Key Contributions -->
+                <div class="gov-pipeline-card">
+                    <div class="gov-arch-header">
+                        <div>
+                            <span class="gov-arch-eyebrow" data-i18n="bigov.pipeEyebrow">CYCLE D'INGÉNIERIE DE PRODUCTION</span>
+                            <h3 class="gov-arch-title" data-i18n="bigov.pipeTitle">De la Sandbox BigQuery à la Mise en Production</h3>
+                        </div>
+                        <span class="gov-pipe-tag" data-i18n="bigov.pipeTag">PIPELINE DE PRODUCTION</span>
+                    </div>
+
+                    <p class="gov-pipe-intro" data-i18n="bigov.pipeIntro">
+                        Enrichissement d'une solution existante de monitoring Power BI : préparation des tables SQL sous BigQuery, ajout du contexte organisationnel et déploiement en production via Azure DevOps.
+                    </p>
+
+                    <div class="gov-pipeline-steps">
+                        <div class="gov-step-item">
+                            <div class="gov-step-badge gov-step-dev" data-i18n="bigov.step1Badge">1. EXTRACTION</div>
+                            <div class="gov-step-content">
+                                <h4 data-i18n="bigov.step1Title">Intégration API REST &amp; Contexte Métier</h4>
+                                <p data-i18n="bigov.step1Desc">Croisement de la télémétrie plateforme Power BI avec le référentiel organisationnel pour relier l'activité aux départements.</p>
+                            </div>
+                        </div>
+
+                        <div class="gov-step-item">
+                            <div class="gov-step-badge gov-step-val" data-i18n="bigov.step2Badge">2. BIGQUERY SQL</div>
+                            <div class="gov-step-content">
+                                <h4 data-i18n="bigov.step2Title">Modélisation SQL &amp; Contrôles Qualité</h4>
+                                <p data-i18n="bigov.step2Desc">Extension du dataset partagé, logique d'insertion incrémentale, déduplication et contrôles de cohérence.</p>
+                            </div>
+                        </div>
+
+                        <div class="gov-step-item">
+                            <div class="gov-step-badge gov-step-vcs" data-i18n="bigov.step3Badge">3. AZURE DEVOPS</div>
+                            <div class="gov-step-content">
+                                <h4 data-i18n="bigov.step3Title">Versionnement &amp; Mise en Production</h4>
+                                <p data-i18n="bigov.step3Desc">Validation par Pull Requests sous Azure DevOps et alimentation directe des rapports IT et Data Owners en production.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High-Level Confidentiality & Governance Notice -->
+            <div class="gov-confidential-banner">
+                <div class="gov-conf-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="gov-conf-body">
+                    <div class="gov-conf-header">
+                        <span class="gov-foundation-pill" data-i18n="bigov.foundationBanner">SYNTHÈSE HAUT NIVEAU — CONFIDENTIALITÉ INDUSTRIELLE</span>
+                        <span class="gov-conf-badge" data-i18n="bigov.confBadge">AUCUN TABLEAU DE BORD INTERNE EXPOSÉ</span>
+                    </div>
+                    <p class="gov-conf-text" data-i18n="bigov.disclaimer">
+                        Conformément aux règles de confidentialité de l'entreprise, les tableaux de bord internes, les métriques détaillées et le schéma exact des tables ne sont pas affichés. Seul le flux architectural de haut niveau est présenté ci-dessus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BI Project Section: Laboratory Digitalization & FIFO Tracking -->
+    <section id="bi-project" class="bi-project-section">
+        <div class="container">
+            <div class="section-header bi-project-hero">
+                <div class="section-tag" data-i18n="biproject.tag">// PROJET BI — DIGITALISATION DU LABORATOIRE</div>
+                <h2 class="section-title" data-i18n="biproject.title">Suivi FIFO des Échantillons &amp; Monitoring des Bancs d'Essais</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-i18n="biproject.subtitle">
+                    Reconstitution interactive d'une solution décisionnelle Power BI industrielle conçue pour piloter les flux d'échantillons, la priorisation FIFO, le suivi des urgences, les retards de file, la disponibilité des bancs et les temps de réponse machines.
+                </p>
+                <div class="tech-tag-row">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">SharePoint</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">KPI Design</span>
+                    <span class="tech-tag">Process Optimization</span>
+                </div>
+            </div>
+
+            <!-- Power BI Dashboard Reconstruction Frame -->
+            <div class="pbi-dashboard-wrapper">
+                <div class="pbi-dashboard-frame" id="pbi-dashboard-container">
+                    
+                    <!-- Power BI Topbar -->
+                    <div class="pbi-topbar">
+                        <div class="pbi-brand">
+                            <div class="pbi-logo-bars">
+                                <div class="pbi-bar pbi-bar-1"></div>
+                                <div class="pbi-bar pbi-bar-2"></div>
+                                <div class="pbi-bar pbi-bar-3"></div>
+                            </div>
+                            <span class="pbi-title-text">POWER BI • TEST LAB FLOW</span>
+                        </div>
+                        <div class="pbi-topbar-meta">
+                            <span class="pbi-badge-synthetic" data-i18n="biproject.syntheticBadge">Reconstitution représentative (Données synthétiques)</span>
+                            <div class="pbi-badge-live">
+                                <span class="pbi-live-dot"></span>
+                                <span>LIVE</span>
+                            </div>
+                            <button type="button" class="pbi-btn-expand" id="pbi-btn-formulas" title="Voir la logique DAX & Python" aria-expanded="false">
+                                <i class="fas fa-code"></i>
+                                <span data-i18n="biproject.btnFormulas">Logique DAX &amp; Python</span>
+                            </button>
+                            <button class="pbi-btn-expand" id="pbi-btn-fullscreen" title="Agrandir / Plein écran" aria-label="Toggle Fullscreen">
+                                <i class="fas fa-expand"></i>
+                                <span data-i18n="biproject.btnExpand">Agrandir</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible DAX & Python Logic Drawer -->
+                    <div class="pbi-formula-drawer" id="pbi-formula-drawer" hidden>
+                        <div class="pbi-formula-grid">
+                            <div class="pbi-formula-block">
+                                <div class="pbi-formula-header">
+                                    <span class="pbi-formula-tag">DAX • Power BI Semantic Model</span>
+                                    <span class="pbi-formula-sub" data-i18n="biproject.daxSub">Mesures d'ordonnancement FIFO &amp; SLA</span>
+                                </div>
+                                <pre class="pbi-formula-code"><code>// Rang FIFO pondéré par criticité et ancienneté
+FIFO_Queue_Rank = 
+RANKX(
+    FILTER(ALLSELECTED('LabQueue'), 'LabQueue'[Status] = "Waiting"),
+    'LabQueue'[IsUrgent] * 1000 + 'LabQueue'[AgeHours],
+    , DESC, DENSE
+)
+
+// Taux de disponibilité effective des bancs d'essais
+Bench_Availability_Pct = 
+DIVIDE(
+    SUM('BenchTelemetry'[ActiveRunHours]),
+    SUM('BenchTelemetry'[ScheduledShiftHours]) - SUM('BenchTelemetry'[PlannedMaintHours]),
+    0
+)</code></pre>
+                            </div>
+                            <div class="pbi-formula-block">
+                                <div class="pbi-formula-header">
+                                    <span class="pbi-formula-tag">Python • Pandas / NumPy ETL</span>
+                                    <span class="pbi-formula-sub" data-i18n="biproject.pySub">Pré-calcul automatisé des temps de réponse</span>
+                                </div>
+                                <pre class="pbi-formula-code"><code># Calcul vectorisé du temps de réponse médian & détection des goulots
+df["queue_delay_h"] = (df["start_ts"] - df["arrival_ts"]).dt.total_seconds() / 3600.0
+df["sla_breach"] = np.where(
+    (df["priority"] == "Urgent") & (df["queue_delay_h"] > 2.0), 1, 0
+)
+
+bench_kpi = (
+    df.groupby("bench_id", as_index=False)
+      .agg(median_resp_min=("resp_min", "median"),
+           urgent_backlog=("sla_breach", "sum"))
+)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Body Grid -->
+                    <div class="pbi-body-grid">
+                        
+                        <!-- Left Filter Sidebar / Slicers -->
+                        <aside class="pbi-sidebar">
+                            <div class="pbi-sidebar-header">
+                                <span class="pbi-sidebar-title" data-i18n="biproject.filtersTitle">FILTRES</span>
+                                <button class="pbi-btn-reset" id="pbi-btn-reset" title="Réinitialiser tous les filtres">
+                                    <i class="fas fa-rotate-left"></i> <span data-i18n="biproject.btnReset">Reset</span>
+                                </button>
+                            </div>
+
+                            <!-- Product Group Slicer -->
+                            <div class="pbi-filter-group">
+                                <label class="pbi-filter-label" for="pbi-filter-product" data-i18n="biproject.filterProduct">Groupe de produit</label>
+                                <select id="pbi-filter-product" class="pbi-select">
+                                    <option value="All" data-i18n="biproject.optAllGroups">Tous les groupes</option>
+                                    <option value="Engine Mounts">Engine Mounts</option>
+                                    <option value="Chassis Mounts">Chassis Mounts</option>
+                                    <option value="Bushings">Bushings</option>
+                                    <option value="Isolators">Isolators</option>
+                                </select>
+                            </div>
+
+                            <!-- Sector Slicer -->
+                            <div class="pbi-filter-group">
+                                <label class="pbi-filter-label" for="pbi-filter-sector" data-i18n="biproject.filterSector">Secteur d'essai</label>
+                                <select id="pbi-filter-sector" class="pbi-select">
+                                    <option value="All" data-i18n="biproject.optAllSectors">Tous les secteurs</option>
+                                    <option value="Dynamic">Dynamic</option>
+                                    <option value="Static">Static</option>
+                                    <option value="Fatigue">Fatigue</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Creep">Creep</option>
+                                </select>
+                            </div>
+
+                            <!-- Priority Slicer -->
+                            <div class="pbi-filter-group">
+                                <label class="pbi-filter-label" data-i18n="biproject.filterPriority">Niveau de Priorité</label>
+                                <div class="pbi-chips-row">
+                                    <button type="button" class="pbi-chip-priority active" data-priority="All" data-i18n="biproject.chipAll">Tous</button>
+                                    <button type="button" class="pbi-chip-priority" data-priority="Normal">Normal</button>
+                                    <button type="button" class="pbi-chip-priority" data-priority="High">High</button>
+                                </div>
+                                <div class="pbi-urgent-switch-box">
+                                    <label class="pbi-switch-label">
+                                        <input type="checkbox" id="pbi-filter-urgent-only">
+                                        <span class="pbi-urgent-dot"></span>
+                                        <span data-i18n="biproject.filterUrgentOnly">Échantillons urgents uniquement</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Delay Threshold Slider -->
+                            <div class="pbi-filter-group">
+                                <div class="pbi-slider-header">
+                                    <label class="pbi-filter-label" for="pbi-filter-delay" data-i18n="biproject.filterDelay">Seuil de retard max</label>
+                                    <span class="pbi-slider-val" id="pbi-delay-val">48 h</span>
+                                </div>
+                                <input type="range" id="pbi-filter-delay" class="pbi-range" min="0" max="48" step="2" value="48">
+                                <div class="pbi-slider-limits">
+                                    <span>0 h</span>
+                                    <span>48 h</span>
+                                </div>
+                            </div>
+
+                            <!-- FIFO Control Card -->
+                            <div class="pbi-fifo-control-card">
+                                <div class="pbi-fifo-tag">
+                                    <i class="fas fa-arrow-down-wide-short"></i>
+                                    <span data-i18n="biproject.fifoControlTag">CONTRÔLE FIFO</span>
+                                </div>
+                                <p class="pbi-fifo-desc" data-i18n="biproject.fifoRule">Priorité automatique au plus ancien échantillon éligible.</p>
+                            </div>
+
+                            <!-- Data Source Meta -->
+                            <div class="pbi-source-card">
+                                <span class="pbi-source-title" data-i18n="biproject.sourceTitle">Source de données</span>
+                                <span>SharePoint + Lab ERP</span>
+                                <span data-i18n="biproject.sourceRefresh">Actualisation : Automatisée</span>
+                            </div>
+                        </aside>
+
+                        <!-- Main Reporting Area -->
+                        <main class="pbi-main">
+                            
+                            <!-- 4 Top KPI Cards (Computed from data) -->
+                            <div class="pbi-kpi-row">
+                                <!-- KPI 1: Availability -->
+                                <div class="pbi-kpi-card">
+                                    <div class="pbi-kpi-info">
+                                        <span class="pbi-kpi-label" data-i18n="biproject.kpiAvail">DISPONIBILITÉ BANCS</span>
+                                        <div class="pbi-kpi-value" id="kpi-availability-val">92.6%</div>
+                                        <div class="pbi-kpi-delta pbi-delta-pos">
+                                            <span data-i18n="biproject.kpiAvailDelta">▲ +3.4 pts</span>
+                                            <span class="pbi-delta-muted" data-i18n="biproject.kpiAvailSub">vs baseline</span>
+                                        </div>
+                                    </div>
+                                    <div class="pbi-kpi-icon-bubble pbi-icon-green">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+
+                                <!-- KPI 2: Median Response Time -->
+                                <div class="pbi-kpi-card">
+                                    <div class="pbi-kpi-info">
+                                        <span class="pbi-kpi-label" data-i18n="biproject.kpiResp">TEMPS RÉPONSE MÉDIAN</span>
+                                        <div class="pbi-kpi-value" id="kpi-response-val">14.8 min</div>
+                                        <div class="pbi-kpi-delta pbi-delta-muted">
+                                            <span data-i18n="biproject.kpiRespTarget">Cible ≤ 18 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="pbi-kpi-icon-bubble pbi-icon-blue">
+                                        <i class="fas fa-stopwatch"></i>
+                                    </div>
+                                </div>
+
+                                <!-- KPI 3: Urgent Samples -->
+                                <div class="pbi-kpi-card">
+                                    <div class="pbi-kpi-info">
+                                        <span class="pbi-kpi-label" data-i18n="biproject.kpiUrgent">ÉCHANTILLONS URGENTS</span>
+                                        <div class="pbi-kpi-value" id="kpi-urgent-val">7</div>
+                                        <div class="pbi-kpi-delta pbi-delta-warn" id="kpi-urgent-sub">
+                                            <span>3 action due &lt; 2 h</span>
+                                        </div>
+                                    </div>
+                                    <div class="pbi-kpi-icon-bubble pbi-icon-red">
+                                        <i class="fas fa-triangle-exclamation"></i>
+                                    </div>
+                                </div>
+
+                                <!-- KPI 4: Average Queue Delay -->
+                                <div class="pbi-kpi-card">
+                                    <div class="pbi-kpi-info">
+                                        <span class="pbi-kpi-label" data-i18n="biproject.kpiDelay">RETARD MOYEN FILE</span>
+                                        <div class="pbi-kpi-value" id="kpi-delay-val">22.4 h</div>
+                                        <div class="pbi-kpi-delta pbi-delta-pos">
+                                            <span data-i18n="biproject.kpiDelayDelta">▼ -18% après refonte FIFO</span>
+                                        </div>
+                                    </div>
+                                    <div class="pbi-kpi-icon-bubble pbi-icon-yellow">
+                                        <i class="fas fa-list-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Content Split: Table + Right Visuals -->
+                            <div class="pbi-content-split">
+                                
+                                <!-- Left: FIFO Sample Queue Table + Queue Aging -->
+                                <div class="pbi-left-col">
+                                    
+                                    <!-- Table Card -->
+                                    <div class="pbi-card-box">
+                                        <div class="pbi-card-header pbi-table-header-flex">
+                                            <div>
+                                                <h3 class="pbi-card-title" data-i18n="biproject.tableTitle">FILE D'ATTENTE ÉCHANTILLONS FIFO</h3>
+                                                <p class="pbi-card-subtitle" data-i18n="biproject.tableSub">Priorisation et contrôle de vieillissement des éprouvettes d'essais</p>
+                                            </div>
+                                            <div class="pbi-table-actions">
+                                                <button class="pbi-btn-csv" id="pbi-btn-export-csv" title="Exporter la sélection filtrée au format CSV">
+                                                    <i class="fas fa-file-arrow-down"></i> <span data-i18n="biproject.btnExportCsv">Exporter CSV</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Scenario Quick Presets Row -->
+                                        <div class="pbi-scenarios-bar">
+                                            <span class="pbi-scenarios-label"><i class="fas fa-bolt"></i> <span data-i18n="biproject.scenariosLabel">Scénarios BI :</span></span>
+                                            <button type="button" class="pbi-scenario-btn active" data-scenario="all" data-i18n="biproject.presetAll">⚡ Vue Standard</button>
+                                            <button type="button" class="pbi-scenario-btn" data-scenario="urgent_crisis" data-i18n="biproject.presetUrgent">🚨 Crise Urgences</button>
+                                            <button type="button" class="pbi-scenario-btn" data-scenario="bottleneck_tb04" data-i18n="biproject.presetBottleneck">⚙️ Goulot TB-04</button>
+                                            <button type="button" class="pbi-scenario-btn" data-scenario="fifo_aged" data-i18n="biproject.presetFifo">🛡️ Tri Strict FIFO</button>
+                                        </div>
+
+                                        <!-- Live Search Input -->
+                                        <div class="pbi-table-search-bar">
+                                            <div class="pbi-search-input-wrapper">
+                                                <i class="fas fa-magnifying-glass"></i>
+                                                <input type="text" id="pbi-search-input" placeholder="Rechercher commande, client (ex: OEM-A), banc, type d'essai..." aria-label="Rechercher échantillon">
+                                            </div>
+                                            <span class="pbi-click-hint"><i class="fas fa-mouse-pointer"></i> <span data-i18n="biproject.clickHint">Cliquez sur une ligne pour afficher la fiche d'essai</span></span>
+                                        </div>
+
+                                        <div class="pbi-table-wrapper">
+                                            <table class="pbi-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="order">
+                                                            <span data-i18n="biproject.thOrder">Ordre</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="productGroup">
+                                                            <span data-i18n="biproject.thProduct">Produit</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="sector">
+                                                            <span data-i18n="biproject.thSector">Secteur</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="customer">
+                                                            <span data-i18n="biproject.thCustomer">Client</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable sorted-desc" data-col="ageHours">
+                                                            <span data-i18n="biproject.thAge">Âge</span> <i class="fas fa-sort-down pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="priority">
+                                                            <span data-i18n="biproject.thPriority">Priorité</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="bench">
+                                                            <span data-i18n="biproject.thBench">Banc</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                        <th class="pbi-th pbi-th-sortable" data-col="delayHours">
+                                                            <span data-i18n="biproject.thDelay">Retard</span> <i class="fas fa-sort pbi-sort-icon"></i>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="pbi-table-body">
+                                                    <!-- Dynamic rows injected by dashboard.js -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- Table Pagination -->
+                                        <div class="pbi-table-footer" id="pbi-table-pagination">
+                                            <!-- Pagination injected by dashboard.js -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Queue Aging Visual Card -->
+                                    <div class="pbi-card-box">
+                                        <div class="pbi-card-header">
+                                            <h3 class="pbi-card-title" data-i18n="biproject.agingTitle">VIEILLISSEMENT EN FILE (QUEUE AGING)</h3>
+                                            <p class="pbi-card-subtitle" data-i18n="biproject.agingSub">Répartition par tranches d'attente (0–12h, 12–24h, 24h+)</p>
+                                        </div>
+
+                                        <!-- Horizontal Stacked Bar -->
+                                        <div class="pbi-aging-bar" id="pbi-aging-bar">
+                                            <!-- Dynamically populated -->
+                                        </div>
+
+                                        <div class="pbi-aging-counts-row" id="pbi-aging-counts">
+                                            <!-- Dynamically populated -->
+                                        </div>
+
+                                        <div class="pbi-aging-priorities-summary">
+                                            <span class="summary-normal">● <span id="pbi-aging-normal-pct">58% Normal</span></span>
+                                            <span class="summary-high">● <span id="pbi-aging-high-pct">27% High</span></span>
+                                            <span class="summary-urgent">● <span id="pbi-aging-urgent-pct">15% Urgent</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Reactivity, Urgency & Trend Charts -->
+                                <div class="pbi-right-col">
+                                    
+                                    <!-- Chart 1: Bench Reactivity Bar Chart -->
+                                    <div class="pbi-card-box">
+                                        <div class="pbi-card-header">
+                                            <h3 class="pbi-card-title" data-i18n="biproject.chartBenchTitle">RÉACTIVITÉ PAR BANC</h3>
+                                            <p class="pbi-card-subtitle" data-i18n="biproject.chartBenchSub">Temps de réponse médian (minutes)</p>
+                                        </div>
+                                        <svg id="pbi-bench-chart" viewBox="0 0 330 170" class="pbi-chart-svg" aria-label="Bench Reactivity Chart"></svg>
+                                    </div>
+
+                                    <!-- Chart 2: Urgency Donut Chart -->
+                                    <div class="pbi-card-box">
+                                        <div class="pbi-card-header">
+                                            <h3 class="pbi-card-title" data-i18n="biproject.chartUrgencyTitle">DISTRIBUTION D'URGENCE</h3>
+                                            <p class="pbi-card-subtitle" data-i18n="biproject.chartUrgencySub">Répartition par criticité</p>
+                                        </div>
+                                        <div class="pbi-donut-container">
+                                            <div class="pbi-donut-graphic-wrapper">
+                                                <svg id="pbi-donut-chart" viewBox="0 0 130 130" class="pbi-chart-svg" aria-label="Urgency Distribution Chart"></svg>
+                                                <div class="pbi-donut-center">
+                                                    <div class="donut-total-num" id="pbi-donut-total">28</div>
+                                                    <div class="donut-total-label" data-i18n="biproject.donutSamplesLabel">échantillons</div>
+                                                </div>
+                                            </div>
+                                            <div class="pbi-donut-legend">
+                                                <span class="donut-leg-item normal" id="pbi-donut-leg-normal">● Normal: 14</span>
+                                                <span class="donut-leg-item high" id="pbi-donut-leg-high">● High: 8</span>
+                                                <span class="donut-leg-item urgent" id="pbi-donut-leg-urgent">● Urgent: 6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chart 3: Availability 6-Week Trend -->
+                                    <div class="pbi-card-box">
+                                        <div class="pbi-card-header">
+                                            <h3 class="pbi-card-title" data-i18n="biproject.chartTrendTitle">DISPONIBILITÉ DES BANCS</h3>
+                                            <p class="pbi-card-subtitle" data-i18n="biproject.chartTrendSub">Tendance sur 6 semaines</p>
+                                        </div>
+                                        <svg id="pbi-trend-chart" viewBox="0 0 150 110" class="pbi-chart-svg" aria-label="Bench Availability 6-Week Trend"></svg>
+                                        <div class="pbi-trend-footer">
+                                            <span class="pbi-trend-current" id="pbi-trend-current-val">92.6% actuel</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+
+                <!-- Confidentiality Disclaimer Banner -->
+                <div class="pbi-disclaimer-banner">
+                    <i class="fas fa-shield-halved"></i>
+                    <span data-i18n="biproject.disclaimer">
+                        Reconstitution de portfolio basée sur des données synthétiques. Aucune donnée confidentielle de client, d'entreprise, d'échantillon ou d'exploitation n'est affichée.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Case Study Structured Breakdown -->
+            <div class="pbi-case-study">
+                <!-- Challenge -->
+                <div class="pbi-study-card">
+                    <div class="pbi-study-header">
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <h4 data-i18n="biproject.challengeTitle">Défi Industriel</h4>
+                    </div>
+                    <p class="pbi-study-desc" data-i18n="biproject.challengeDesc">
+                        Visibilité fragmentée sur les files d'attente d'échantillons, les retards cumulés, les urgences critiques et la disponibilité effective des bancs d'essais mécaniques et acoustiques.
+                    </p>
+                </div>
+
+                <!-- Solution -->
+                <div class="pbi-study-card">
+                    <div class="pbi-study-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 data-i18n="biproject.solutionTitle">Solution Déployée</h4>
+                    </div>
+                    <p class="pbi-study-desc" data-i18n="biproject.solutionDesc">
+                        Un tableau de bord décisionnel Power BI opérationnel combinant ordonnancement FIFO, surveillance des éprouvettes urgentes, suivi du vieillissement de file, calculs de KPI et intégration directe sous SharePoint.
+                    </p>
+                </div>
+
+                <!-- Contribution -->
+                <div class="pbi-study-card">
+                    <div class="pbi-study-header">
+                        <i class="fas fa-user-check"></i>
+                        <h4 data-i18n="biproject.contributionTitle">Contributions Clés</h4>
+                    </div>
+                    <ul class="pbi-study-list">
+                        <li><i class="fas fa-check"></i> <span data-i18n="biproject.contrib1">Définition &amp; validation des KPI de réactivité</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="biproject.contrib2">Automatisation analytique des KPI avec Python</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="biproject.contrib3">Conception du tableau de bord de suivi FIFO</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="biproject.contrib4">Intégration &amp; administration du portail SharePoint</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="biproject.contrib5">Amélioration mesurable de la visibilité pour les équipes</span></li>
+                    </ul>
+                </div>
+
+                <!-- Technologies -->
+                <div class="pbi-study-card">
+                    <div class="pbi-study-header">
+                        <i class="fas fa-microchip"></i>
+                        <h4 data-i18n="biproject.techTitle">Technologies &amp; Méthodes</h4>
+                    </div>
+                    <p class="pbi-study-desc">
+                        <strong>Power BI</strong> · <strong>DAX</strong> · <strong>Python</strong> (Pandas, NumPy, Matplotlib) · <strong>SharePoint</strong> · <span data-i18n="biproject.techStackDesc">Conception de KPI · Optimisation de Flux Industriels.</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Education & Certifications Section -->
     <section id="education" class="credentials-section">
         <div class="container">
@@ -663,7 +1347,7 @@
                         <!-- Degree 1 -->
                         <div class="timeline-card">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-period">2025 – 2026 | Alternance | Bac+3</div>
+                            <div class="timeline-period" data-i18n="edu.miagePeriod">2025 – 2026 | Alternance | Bac+3</div>
                             <h4 class="timeline-title" data-i18n="edu.miageTitle">Licence informatique MIAGE</h4>
                             <div class="timeline-place"><i class="fas fa-university"></i> Nantes Université</div>
                             <p class="timeline-desc" data-i18n="edu.miageDesc">
@@ -674,7 +1358,7 @@
                         <!-- Degree 2 -->
                         <div class="timeline-card">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-period">2022 – 2024 | Alternance | Bac+2</div>
+                            <div class="timeline-period" data-i18n="edu.btsPeriod">2022 – 2024 | Alternance | Bac+2</div>
                             <h4 class="timeline-title" data-i18n="edu.btsTitle">BTS Services Informatiques aux Organisations (SIO)</h4>
                             <div class="timeline-place"><i class="fas fa-school"></i> Lycée Carcouet, Nantes</div>
                             <p class="timeline-desc" data-i18n="edu.btsDesc">
@@ -685,9 +1369,9 @@
                         <!-- Degree 3 -->
                         <div class="timeline-card">
                             <div class="timeline-dot"></div>
-                            <div class="timeline-period">2013 – 2019 | Bac+3 / Bachelor</div>
+                            <div class="timeline-period" data-i18n="edu.psyPeriod">2013 – 2019 | Bac+3 / Bachelor</div>
                             <h4 class="timeline-title" data-i18n="edu.psyTitle">Licence en Psychologie</h4>
-                            <div class="timeline-place"><i class="fas fa-globe"></i> Middle East Technical University (METU / ODTÜ), Ankara, Turquie</div>
+                            <div class="timeline-place"><i class="fas fa-globe"></i> <span data-i18n="edu.psyPlace">Middle East Technical University (METU / ODTÜ), Ankara, Turquie</span></div>
                             <p class="timeline-desc" data-i18n="edu.psyDesc">
                                 L'une des universités scientifiques les plus réputées du Moyen-Orient. Formation poussée en statistiques descriptives et inférentielles, méthodologie de recherche quantitative et analyse des comportements cognitifs.
                             </p>
@@ -725,7 +1409,7 @@
                             <div class="cert-icon"><i class="fas fa-terminal"></i></div>
                             <div class="cert-content">
                                 <h4 class="cert-name">Data Analyst in Python Career Track</h4>
-                                <span class="cert-issuer">DataCamp (Depuis Juin 2026)</span>
+                                <span class="cert-issuer" data-i18n="edu.cert3Issuer">DataCamp (Depuis Juin 2026)</span>
                                 <p class="cert-desc" data-i18n="edu.cert3Desc">Perfectionnement continu sur les algorithmes de nettoyage, SQL interactif et analyse exploratoire.</p>
                             </div>
                         </div>
@@ -738,7 +1422,7 @@
                                 <div class="lang-meters">
                                     <div class="lang-row">
                                         <span class="lang-name" data-i18n="edu.langFr">Français</span>
-                                        <span class="lang-level">C2 (Bilingue) — DUEF Nantes Université</span>
+                                        <span class="lang-level" data-i18n="edu.langFrLevel">C2 (Bilingue) — DUEF Nantes Université</span>
                                     </div>
                                     <div class="lang-progress"><div class="lang-fill" style="width: 100%;"></div></div>
 
@@ -758,6 +1442,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Homepage Integration: Compact Veille Technologique Teaser before Contact -->
+    <section id="veille-teaser" class="veille-teaser-section">
+        <div class="container">
+            <div class="v-teaser-wrapper">
+                <div class="v-teaser-header">
+                    <div class="v-teaser-header-left">
+                        <span class="section-tag" data-i18n="veille.teaserTag">// SYNTHÈSE DE VEILLE</span>
+                        <h3 class="v-teaser-section-title" data-i18n="veille.teaserTitle">Veille Technologique</h3>
+                        <p class="v-teaser-section-sub" data-i18n="veille.teaserSubtitle">Les tendances Data, IA et Business Intelligence que je suis et analyse.</p>
+                    </div>
+                    <div class="v-teaser-header-right">
+                        <a href="veille.html" class="btn btn-secondary v-teaser-cta-btn">
+                            <span data-i18n="veille.teaserCta">Explorer ma veille technologique →</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Latest 3 entries populated dynamically by veille.js -->
+                <div class="v-teaser-grid" id="veille-teaser-grid"></div>
             </div>
         </div>
     </section>
@@ -863,8 +1570,27 @@
                             <i class="fas fa-paper-plane"></i>
                             <span data-i18n="contact.formSubmit">Envoyer le Message</span>
                         </button>
-                        <p class="form-notice" data-i18n="contact.formNotice">
-                            <i class="fas fa-shield-alt"></i> Vos coordonnées ne seront utilisées que pour vous répondre directement.
+
+                        <div class="contact-quick-actions" id="contact-quick-actions">
+                            <span class="contact-quick-label" data-i18n="contact.quickLabel">Ou envoyer directement via :</span>
+                            <div class="contact-quick-btns">
+                                <button type="button" class="contact-quick-btn" id="btn-copy-email" title="ercanlimuratcan@gmail.com">
+                                    <i class="fas fa-copy"></i>
+                                    <span data-i18n="contact.btnCopyEmail">Copier l'email</span>
+                                </button>
+                                <button type="button" class="contact-quick-btn" id="btn-gmail-web">
+                                    <i class="fab fa-google"></i>
+                                    <span>Gmail Web</span>
+                                </button>
+                                <button type="button" class="contact-quick-btn" id="btn-outlook-web">
+                                    <i class="fab fa-microsoft"></i>
+                                    <span>Outlook Web</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="form-notice">
+                            <i class="fas fa-shield-alt"></i> <span data-i18n="contact.formNotice">Vos coordonnées ne seront utilisées que pour vous répondre directement.</span>
                         </p>
                     </form>
                 </div>
@@ -894,8 +1620,17 @@
         </div>
     </footer>
 
+    <!-- Full Veille Analysis Modal -->
+    <div class="v-modal-backdrop" id="veille-modal-backdrop" hidden>
+        <div class="v-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="veille-modal-title">
+            <div id="veille-modal-content"></div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="veille.js"></script>
 </body>
 </html>
 

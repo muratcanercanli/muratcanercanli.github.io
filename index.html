@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261108">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -96,7 +96,6 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="veille.html" class="nav-link" data-i18n="nav.veille">Veille</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link" data-i18n="nav.credentials">Formation</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
@@ -1446,29 +1445,6 @@ bench_kpi = (
         </div>
     </section>
 
-    <!-- 7. Homepage Integration: Compact Veille Technologique Teaser before Contact -->
-    <section id="veille-teaser" class="veille-teaser-section">
-        <div class="container">
-            <div class="v-teaser-wrapper">
-                <div class="v-teaser-header">
-                    <div class="v-teaser-header-left">
-                        <span class="section-tag" data-i18n="veille.teaserTag">// SYNTHÈSE DE VEILLE</span>
-                        <h3 class="v-teaser-section-title" data-i18n="veille.teaserTitle">Veille Technologique</h3>
-                        <p class="v-teaser-section-sub" data-i18n="veille.teaserSubtitle">Les tendances Data, IA et Business Intelligence que je suis et analyse.</p>
-                    </div>
-                    <div class="v-teaser-header-right">
-                        <a href="veille.html" class="btn btn-secondary v-teaser-cta-btn">
-                            <span data-i18n="veille.teaserCta">Explorer ma veille technologique →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Latest 3 entries populated dynamically by veille.js -->
-                <div class="v-teaser-grid" id="veille-teaser-grid"></div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact & Query Intake Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -1620,17 +1596,9 @@ bench_kpi = (
         </div>
     </footer>
 
-    <!-- Full Veille Analysis Modal -->
-    <div class="v-modal-backdrop" id="veille-modal-backdrop" hidden>
-        <div class="v-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="veille-modal-title">
-            <div id="veille-modal-content"></div>
-        </div>
-    </div>
-
     <!-- Scripts -->
-    <script src="script.js"></script>
-    <script src="dashboard.js"></script>
-    <script src="veille.js"></script>
+    <script src="script.js?v=20261108"></script>
+    <script src="dashboard.js?v=20261108"></script>
 </body>
 </html>
 

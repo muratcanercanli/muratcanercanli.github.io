@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="7" stdDeviation="12" flood-color="#000000" flood-opacity="0.28"/>
+  </filter>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#07101d"/>
+    <stop offset="1" stop-color="#0b1523"/>
+  </linearGradient>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif}
+    .muted{fill:#8ea0b8}
+    .small{font-size:12px}
+    .label{font-size:13px;font-weight:700;fill:#9eb0c6}
+    .value{font-size:31px;font-weight:800;fill:#eef5ff}
+    .title{font-size:27px;font-weight:800;fill:#f4f8fc}
+    .section{font-size:16px;font-weight:800;fill:#e7eef8}
+    .th{font-size:12px;font-weight:800;fill:#dce8f7}
+    .td{font-size:12px;fill:#c4d0df}
+    .chip{font-size:11px;font-weight:800}
+  </style>
+</defs>
+
+<!-- page -->
+<rect width="1600" height="900" fill="url(#bg)"/>
+
+<!-- browser/project frame -->
+<rect x="28" y="26" width="1544" height="848" rx="20" fill="#0d1725" stroke="#22334a" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="28" y="26" width="1544" height="54" rx="20" fill="#111d2c"/>
+<rect x="28" y="60" width="1544" height="20" fill="#111d2c"/>
+<circle cx="56" cy="52" r="6" fill="#ef665d"/>
+<circle cx="76" cy="52" r="6" fill="#e8b347"/>
+<circle cx="96" cy="52" r="6" fill="#58b67a"/>
+<text x="128" y="57" font-size="13" fill="#90a3ba">portfolio / projects / fifo-laboratory-dashboard</text>
+
+<!-- Power BI style topbar -->
+<rect x="52" y="96" width="1496" height="64" rx="10" fill="#142237" stroke="#263b55"/>
+<g transform="translate(74,111)">
+  <rect x="0" y="8" width="6" height="26" rx="2" fill="#f2c811"/>
+  <rect x="9" y="3" width="6" height="31" rx="2" fill="#f2c811"/>
+  <rect x="18" y="0" width="6" height="34" rx="2" fill="#f2c811"/>
+  <text x="38" y="24" font-size="19" font-weight="800" fill="#f4f8fc">POWER BI • TEST LAB FLOW</text>
+</g>
+<text x="1300" y="132" font-size="12" fill="#8ea0b8">Synthetic portfolio reconstruction</text>
+<circle cx="1514" cy="128" r="6" fill="#42c27a"/>
+<text x="1430" y="132" font-size="12" fill="#a9bed3">LIVE</text>
+
+<!-- sidebar -->
+<rect x="52" y="178" width="228" height="672" rx="12" fill="#101b2a" stroke="#22354a"/>
+<text x="74" y="212" class="section">FILTERS</text>
+
+<text x="74" y="250" class="label">Product group</text>
+<rect x="74" y="264" width="184" height="38" rx="8" fill="#142337" stroke="#2a4058"/>
+<text x="88" y="288" font-size="12" fill="#dbe7f3">All product groups</text>
+<path d="M238 280 l6 6 6-6" fill="none" stroke="#8fa4ba" stroke-width="2"/>
+
+<text x="74" y="334" class="label">Sector</text>
+<rect x="74" y="348" width="184" height="38" rx="8" fill="#142337" stroke="#2a4058"/>
+<text x="88" y="372" font-size="12" fill="#dbe7f3">All sectors</text>
+<path d="M238 364 l6 6 6-6" fill="none" stroke="#8fa4ba" stroke-width="2"/>
+
+<text x="74" y="418" class="label">Priority</text>
+<rect x="74" y="434" width="86" height="30" rx="15" fill="#23354a"/>
+<text x="95" y="454" class="chip" fill="#a9bed3">Normal</text>
+<rect x="166" y="434" width="92" height="30" rx="15" fill="#6a4c13"/>
+<text x="191" y="454" class="chip" fill="#ffd66a">High</text>
+<rect x="74" y="473" width="184" height="32" rx="16" fill="#542621" stroke="#b95343"/>
+<circle cx="91" cy="489" r="5" fill="#ff6b57"/>
+<text x="104" y="493" class="chip" fill="#ffad9f">Urgent samples only</text>
+
+<text x="74" y="548" class="label">Delay threshold</text>
+<line x1="80" y1="583" x2="244" y2="583" stroke="#31485f" stroke-width="6" stroke-linecap="round"/>
+<line x1="80" y1="583" x2="187" y2="583" stroke="#27c2a5" stroke-width="6" stroke-linecap="round"/>
+<circle cx="187" cy="583" r="8" fill="#e8f4ff" stroke="#27c2a5" stroke-width="3"/>
+<text x="74" y="611" class="small muted">0 h</text>
+<text x="222" y="611" class="small muted">48 h</text>
+
+<rect x="74" y="660" width="184" height="48" rx="9" fill="#11283a" stroke="#20546e"/>
+<text x="92" y="682" font-size="11" font-weight="800" fill="#27c2a5">FIFO CONTROL</text>
+<text x="92" y="699" font-size="11" fill="#9db1c7">Oldest eligible sample first</text>
+
+<text x="74" y="756" class="label">Data source</text>
+<text x="74" y="780" class="small muted">SharePoint + Lab ERP</text>
+<text x="74" y="800" class="small muted">Refresh: automated</text>
+
+<!-- main area -->
+<!-- KPI cards -->
+<g transform="translate(300,178)">
+  <rect width="286" height="132" rx="12" fill="#122033" stroke="#233a52"/>
+  <text x="20" y="28" class="label">BENCH AVAILABILITY</text>
+  <text x="20" y="76" class="value">92.6%</text>
+  <text x="20" y="104" font-size="12" fill="#50d59e">▲ +3.4 pts</text>
+  <circle cx="247" cy="55" r="24" fill="#12382f"/>
+  <path d="M236 56 l8 8 15-20" fill="none" stroke="#50d59e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<g transform="translate(604,178)">
+  <rect width="286" height="132" rx="12" fill="#122033" stroke="#233a52"/>
+  <text x="20" y="28" class="label">MEDIAN RESPONSE TIME</text>
+  <text x="20" y="76" class="value">14.8 min</text>
+  <text x="20" y="104" font-size="12" fill="#9db1c7">Target ≤ 18 min</text>
+  <circle cx="247" cy="55" r="24" fill="#142e4d"/>
+  <circle cx="247" cy="55" r="13" fill="none" stroke="#66a7e8" stroke-width="3"/>
+  <path d="M247 55 v-8 M247 55 l8 5" stroke="#66a7e8" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<g transform="translate(908,178)">
+  <rect width="286" height="132" rx="12" fill="#122033" stroke="#233a52"/>
+  <text x="20" y="28" class="label">URGENT SAMPLES</text>
+  <text x="20" y="76" class="value">7</text>
+  <text x="20" y="104" font-size="12" fill="#ff8a78">3 action due &lt; 2 h</text>
+  <circle cx="247" cy="55" r="24" fill="#45231f"/>
+  <path d="M247 37 l18 32 h-36 z" fill="#ff6b57"/>
+  <rect x="245" y="46" width="4" height="11" rx="2" fill="#fff"/>
+  <circle cx="247" cy="62" r="2.4" fill="#fff"/>
+</g>
+
+<g transform="translate(1212,178)">
+  <rect width="336" height="132" rx="12" fill="#122033" stroke="#233a52"/>
+  <text x="20" y="28" class="label">AVERAGE QUEUE DELAY</text>
+  <text x="20" y="76" class="value">22.4 h</text>
+  <text x="20" y="104" font-size="12" fill="#50d59e">▼ 18% after FIFO redesign</text>
+  <rect x="278" y="31" width="34" height="34" rx="8" fill="#3a3214"/>
+  <path d="M286 44 h18 M286 51 h14 M286 58 h9" stroke="#f2c811" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<!-- table -->
+<rect x="300" y="330" width="862" height="520" rx="12" fill="#111e30" stroke="#23394f"/>
+<text x="320" y="360" class="section">FIFO SAMPLE QUEUE</text>
+<text x="320" y="381" class="small muted">Prioritization and aging control for test samples</text>
+
+<rect x="320" y="401" width="822" height="36" rx="7" fill="#19314d"/>
+<text x="332" y="424" class="th">Order</text>
+<text x="430" y="424" class="th">Product</text>
+<text x="566" y="424" class="th">Sector</text>
+<text x="666" y="424" class="th">Customer</text>
+<text x="778" y="424" class="th">Age</text>
+<text x="844" y="424" class="th">Priority</text>
+<text x="947" y="424" class="th">Bench</text>
+<text x="1032" y="424" class="th">Delay</text>
+
+<!-- rows -->
+<g>
+<rect x="320" y="445" width="822" height="43" fill="#192234"/>
+<rect x="320" y="445" width="4" height="43" fill="#ff6b57"/>
+<text x="332" y="471" class="td">100432-10</text><text x="430" y="471" class="td">Engine Mounts</text><text x="566" y="471" class="td">Dynamic</text><text x="666" y="471" class="td">OEM-A</text><text x="778" y="471" class="td">31 h</text>
+<rect x="837" y="455" width="76" height="23" rx="11" fill="#542621"/><text x="854" y="471" class="chip" fill="#ff9c8e">URGENT</text>
+<text x="947" y="471" class="td">TB-04</text><text x="1032" y="471" class="td" fill="#ff8a78">+9 h</text>
+
+<rect x="320" y="489" width="822" height="43" fill="#121e30"/>
+<rect x="320" y="489" width="4" height="43" fill="#f2c811"/>
+<text x="332" y="515" class="td">100431-20</text><text x="430" y="515" class="td">Chassis Mounts</text><text x="566" y="515" class="td">Static</text><text x="666" y="515" class="td">OEM-B</text><text x="778" y="515" class="td">24 h</text>
+<rect x="837" y="499" width="66" height="23" rx="11" fill="#5a4b16"/><text x="856" y="515" class="chip" fill="#ffe06a">HIGH</text>
+<text x="947" y="515" class="td">TB-02</text><text x="1032" y="515" class="td" fill="#ffd66a">+4 h</text>
+
+<rect x="320" y="533" width="822" height="43" fill="#192234"/>
+<rect x="320" y="533" width="4" height="43" fill="#38a2e5"/>
+<text x="332" y="559" class="td">100430-40</text><text x="430" y="559" class="td">Engine Mounts</text><text x="566" y="559" class="td">Fatigue</text><text x="666" y="559" class="td">OEM-C</text><text x="778" y="559" class="td">17 h</text>
+<rect x="837" y="543" width="80" height="23" rx="11" fill="#18374d"/><text x="850" y="559" class="chip" fill="#87cbff">NORMAL</text>
+<text x="947" y="559" class="td">TB-05</text><text x="1032" y="559" class="td">0 h</text>
+
+<rect x="320" y="577" width="822" height="43" fill="#121e30"/>
+<rect x="320" y="577" width="4" height="43" fill="#ff6b57"/>
+<text x="332" y="603" class="td">100425-10</text><text x="430" y="603" class="td">Chassis Mounts</text><text x="566" y="603" class="td">Engineering</text><text x="666" y="603" class="td">OEM-E</text><text x="778" y="603" class="td">38 h</text>
+<rect x="837" y="587" width="76" height="23" rx="11" fill="#542621"/><text x="854" y="603" class="chip" fill="#ff9c8e">URGENT</text>
+<text x="947" y="603" class="td">TB-03</text><text x="1032" y="603" class="td" fill="#ff8a78">+12 h</text>
+
+<rect x="320" y="621" width="822" height="43" fill="#192234"/>
+<rect x="320" y="621" width="4" height="43" fill="#38a2e5"/>
+<text x="332" y="647" class="td">100423-50</text><text x="430" y="647" class="td">Isolators</text><text x="566" y="647" class="td">Creep</text><text x="666" y="647" class="td">OEM-B</text><text x="778" y="647" class="td">11 h</text>
+<rect x="837" y="631" width="80" height="23" rx="11" fill="#18374d"/><text x="850" y="647" class="chip" fill="#87cbff">NORMAL</text>
+<text x="947" y="647" class="td">TB-02</text><text x="1032" y="647" class="td">0 h</text>
+</g>
+
+<!-- queue aging -->
+<text x="320" y="708" class="section">Queue aging</text>
+<rect x="320" y="729" width="624" height="18" rx="9" fill="#24354a"/>
+<rect x="320" y="729" width="279" height="18" rx="9" fill="#38a2e5"/>
+<rect x="599" y="729" width="173" height="18" fill="#f2c811"/>
+<rect x="772" y="729" width="172" height="18" rx="9" fill="#ff6b57"/>
+<text x="320" y="770" class="small muted">0–12h</text>
+<text x="582" y="770" class="small muted">12–24h</text>
+<text x="764" y="770" class="small muted">24h+</text>
+<text x="1000" y="737" font-size="12" fill="#87cbff">● 58% Normal</text>
+<text x="1000" y="759" font-size="12" fill="#ffe06a">● 27% High</text>
+<text x="1000" y="781" font-size="12" fill="#ff9c8e">● 15% Urgent</text>
+
+<!-- right charts -->
+<rect x="1182" y="330" width="366" height="251" rx="12" fill="#111e30" stroke="#23394f"/>
+<text x="1202" y="360" class="section">Bench Reactivity</text>
+<text x="1202" y="381" class="small muted">Median response time by bench</text>
+<line x1="1222" y1="529" x2="1519" y2="529" stroke="#33485e"/>
+<line x1="1222" y1="420" x2="1222" y2="529" stroke="#33485e"/>
+<line x1="1222" y1="463" x2="1519" y2="463" stroke="#40576d" stroke-dasharray="5 5"/>
+<text x="1193" y="467" class="small muted">18m</text>
+<rect x="1242" y="478" width="26" height="51" rx="5" fill="#38a2e5"/>
+<rect x="1291" y="462" width="26" height="67" rx="5" fill="#38a2e5"/>
+<rect x="1340" y="451" width="26" height="78" rx="5" fill="#f2c811"/>
+<rect x="1389" y="488" width="26" height="41" rx="5" fill="#38a2e5"/>
+<rect x="1438" y="431" width="26" height="98" rx="5" fill="#ff6b57"/>
+<rect x="1487" y="470" width="26" height="59" rx="5" fill="#38a2e5"/>
+<text x="1239" y="550" class="small muted">01</text><text x="1288" y="550" class="small muted">02</text><text x="1337" y="550" class="small muted">03</text><text x="1386" y="550" class="small muted">04</text><text x="1435" y="550" class="small muted">05</text><text x="1484" y="550" class="small muted">06</text>
+
+<rect x="1182" y="599" width="176" height="251" rx="12" fill="#111e30" stroke="#23394f"/>
+<text x="1202" y="629" class="section">Urgency</text>
+<circle cx="1270" cy="714" r="50" fill="none" stroke="#23364b" stroke-width="20"/>
+<circle cx="1270" cy="714" r="50" fill="none" stroke="#38a2e5" stroke-width="20" stroke-dasharray="182 132" transform="rotate(-90 1270 714)"/>
+<circle cx="1270" cy="714" r="50" fill="none" stroke="#f2c811" stroke-width="20" stroke-dasharray="85 229" stroke-dashoffset="-182" transform="rotate(-90 1270 714)"/>
+<circle cx="1270" cy="714" r="50" fill="none" stroke="#ff6b57" stroke-width="20" stroke-dasharray="47 267" stroke-dashoffset="-267" transform="rotate(-90 1270 714)"/>
+<text x="1270" y="710" text-anchor="middle" font-size="24" font-weight="800" fill="#eef5ff">143</text>
+<text x="1270" y="728" text-anchor="middle" class="small muted">samples</text>
+<text x="1202" y="801" font-size="11" fill="#87cbff">● Normal 83</text>
+<text x="1202" y="820" font-size="11" fill="#ffe06a">● High 39</text>
+<text x="1202" y="839" font-size="11" fill="#ff9c8e">● Urgent 21</text>
+
+<rect x="1374" y="599" width="174" height="251" rx="12" fill="#111e30" stroke="#23394f"/>
+<text x="1394" y="629" class="section">Availability</text>
+<text x="1394" y="649" class="small muted">6-week trend</text>
+<line x1="1398" y1="797" x2="1524" y2="797" stroke="#33485e"/>
+<polyline points="1404,770 1427,755 1450,762 1473,730 1496,716 1518,690" fill="none" stroke="#50d59e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1404" cy="770" r="4" fill="#50d59e"/><circle cx="1427" cy="755" r="4" fill="#50d59e"/><circle cx="1450" cy="762" r="4" fill="#50d59e"/><circle cx="1473" cy="730" r="4" fill="#50d59e"/><circle cx="1496" cy="716" r="4" fill="#50d59e"/><circle cx="1518" cy="690" r="4" fill="#50d59e"/>
+<text x="1394" y="830" font-size="11" fill="#50d59e">92.6% current</text>
+
+<!-- footer badge -->
+<rect x="1140" y="832" width="388" height="24" rx="12" fill="#102033"/>
+<text x="1155" y="848" font-size="10.5" fill="#8ea0b8">Fictitious data • dashboard reconstructed for portfolio presentation</text>
+</svg>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique | Murat Can ERCANLI — Data, IA &amp; Business Intelligence</title>
+    <meta name="description" content="Veille Technologique de Murat Can ERCANLI : Data Analytics, Artificial Intelligence, Business Intelligence, Microsoft Fabric, Gouvernance Power BI et EU AI Act.">
+    <meta name="author" content="Murat Can ERCANLI">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="canonical" href="https://muratcanercanli.github.io/veille.html">
+
+    <!-- Google Fonts: Plus Jakarta Sans for UI, Inter for body, JetBrains Mono for telemetry -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas Mesh & Ambient Glow Orbs -->
+    <div class="canvas-grid">
+        <canvas id="canvas-particles"></canvas>
+    </div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">
+                    <span class="logo-terminal">&gt;_</span>
+                    <span class="logo-name">Murat Can <span class="highlight">ERCANLI</span></span>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link" data-i18n="nav.home">Accueil</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link" data-i18n="nav.about">À Propos</a></li>
+                <li class="nav-item"><a href="index.html#frameworks" class="nav-link" data-i18n="nav.workflow">Méthodologie</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link" data-i18n="nav.toolkit">Compétences</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                <li class="nav-item nav-dropdown">
+                    <a href="index.html#bi-governance" class="nav-link nav-dropdown-toggle" id="nav-projects-link">
+                        <span data-i18n="nav.projectsMenu">Projets</span>
+                        <i class="fas fa-chevron-down nav-caret"></i>
+                    </a>
+                    <ul class="nav-dropdown-menu" aria-label="Projects submenu">
+                        <li>
+                            <a href="index.html#bi-governance" class="nav-dropdown-item">
+                                <i class="fas fa-sitemap"></i>
+                                <span data-i18n="nav.bigov">Gouvernance Power BI (IT &amp; Métier)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#bi-project" class="nav-dropdown-item">
+                                <i class="fas fa-chart-pie"></i>
+                                <span data-i18n="nav.biproject">Laboratoire FIFO &amp; Bancs d'Essais</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="veille.html" class="nav-link active" data-i18n="nav.veille">Veille</a></li>
+                <li class="nav-item"><a href="index.html#education" class="nav-link" data-i18n="nav.credentials">Formation</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Language Switcher Pill -->
+                <div class="lang-switch" id="lang-switch" title="Changer de langue / Switch language / Dili değiştir">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="tr">TR</button>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Thème clair / sombre">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu Hamburger -->
+                <div class="nav-toggle" id="mobile-menu" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </nav>
+
+    <!-- Veille Technologique (Structured Technology Watch) Section -->
+    <main style="padding-top: 2.5rem;">
+        <section id="veille" class="veille-section">
+            <div class="container">
+                <!-- 1. Page Introduction -->
+                <div class="section-header">
+                    <div class="section-tag" data-i18n="veille.tag">// VEILLE TECHNOLOGIQUE · DATA · IA · BI</div>
+                    <h1 class="section-title" data-i18n="veille.title">Veille Technologique</h1>
+                    <p class="veille-hero-subtitle" data-i18n="veille.subtitle">Data Analytics · Artificial Intelligence · Business Intelligence</p>
+                    <div class="section-divider"></div>
+                    <blockquote class="veille-intro-quote">
+                        <i class="fas fa-quote-left veille-quote-icon" aria-hidden="true"></i>
+                        <p data-i18n="veille.introQuote">
+                            Je réalise une veille régulière sur les évolutions des technologies, outils et pratiques liés à la Data, à l'Intelligence Artificielle et à la Business Intelligence. Cette veille me permet d'identifier les nouvelles tendances, d'évaluer leur impact sur les métiers de la donnée et de maintenir mes connaissances techniques et fonctionnelles à jour.
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!-- 3 Main Monitoring Domains (Interactive Filter Cards) -->
+                <div class="veille-subblock">
+                    <div class="veille-subblock-header">
+                        <div class="veille-subblock-title-wrap">
+                            <span class="veille-step-pill" data-i18n="veille.domainsBadge">3 Piliers de Veille</span>
+                            <h2 class="veille-subblock-title" data-i18n="veille.domainsTitle">Domaines de Surveillance Technologique</h2>
+                        </div>
+                        <p class="veille-subblock-desc" data-i18n="veille.domainsDesc">Cliquez sur un domaine pour filtrer directement les analyses correspondantes.</p>
+                    </div>
+                    <div class="v-domains-grid" id="veille-domains-grid" aria-label="Domaines de veille technologique">
+                        <!-- Populated dynamically by veille.js -->
+                    </div>
+                </div>
+
+                <!-- 2. Featured Trend Section: Tendances à suivre -->
+                <div class="veille-subblock">
+                    <div class="veille-subblock-header">
+                        <div class="veille-subblock-title-wrap">
+                            <span class="veille-step-pill veille-pill-accent"><i class="fas fa-bolt"></i> <span data-i18n="veille.trendsBadge">Radar Technologique</span></span>
+                            <h2 class="veille-subblock-title" data-i18n="veille.trendsTitle">Tendances à suivre</h2>
+                        </div>
+                        <p class="veille-subblock-desc" data-i18n="veille.trendsDesc">Synthèse des 5 mouvements structurants qui redéfinissent l'ingénierie des données, l'IA et le décisionnel en 2025–2026.</p>
+                    </div>
+                    <div class="v-trends-grid" id="veille-trends-grid">
+                        <!-- Populated dynamically by veille.js -->
+                    </div>
+                </div>
+
+                <!-- 3 & 6. Filter Toolbar, Search, Tags & Structured Veille Entries -->
+                <div class="veille-subblock" id="veille-controls-anchor">
+                    <div class="veille-subblock-header">
+                        <div class="veille-subblock-title-wrap">
+                            <span class="veille-step-pill"><i class="fas fa-microscope"></i> <span data-i18n="veille.entriesBadge">Analyses &amp; Décryptages</span></span>
+                            <h2 class="veille-subblock-title" data-i18n="veille.entriesTitle">Analyses Détaillées &amp; Impact Métier</h2>
+                        </div>
+                        <p class="veille-subblock-desc" data-i18n="veille.entriesDesc">Chaque note de veille relie une évolution technologique à son impact concret sur l'architecture Data/BI et mes projets en entreprise.</p>
+                    </div>
+
+                    <!-- Interactive Filter & Search Bar -->
+                    <div class="v-filter-toolbar">
+                        <div class="v-filter-top-row">
+                            <div class="v-cat-buttons" role="tablist" aria-label="Catégories de veille">
+                                <button type="button" class="v-cat-filter-btn active" data-v-cat="Tous" data-i18n="veille.filterAll">Tous</button>
+                                <button type="button" class="v-cat-filter-btn" data-v-cat="Data" data-i18n="veille.filterData">Data</button>
+                                <button type="button" class="v-cat-filter-btn" data-v-cat="IA" data-i18n="veille.filterAI">IA</button>
+                                <button type="button" class="v-cat-filter-btn" data-v-cat="Business Intelligence" data-i18n="veille.filterBI">Business Intelligence</button>
+                                <button type="button" class="v-cat-filter-btn" data-v-cat="Gouvernance" data-i18n="veille.filterGov">Gouvernance</button>
+                            </div>
+
+                            <div class="v-search-wrap">
+                                <i class="fas fa-search v-search-icon" aria-hidden="true"></i>
+                                <input
+                                    type="search"
+                                    id="veille-search-input"
+                                    class="v-search-input"
+                                    placeholder="Rechercher (Fabric, Copilot, Agent, Gouvernance, AI Act...)"
+                                    data-i18n-placeholder="veille.searchPlaceholder"
+                                    aria-label="Rechercher dans la veille technologique"
+                                >
+                                <button type="button" id="veille-reset-filters" class="v-reset-btn" style="display: none;">
+                                    <i class="fas fa-rotate-left"></i> <span data-i18n="veille.resetBtn">Réinitialiser</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="v-tags-bar">
+                            <span class="v-tags-label"><i class="fas fa-tags"></i> <span data-i18n="veille.tagsFilterLabel">Filtrer par technologie :</span></span>
+                            <div class="v-tag-cloud" id="veille-tag-cloud">
+                                <!-- Populated dynamically by veille.js -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Structured Technology-Watch Entries List -->
+                    <div class="v-entries-list" id="veille-entries-list">
+                        <!-- Populated dynamically by veille.js -->
+                    </div>
+                </div>
+
+                <!-- 4. Visual Timeline: Évolution de ma veille -->
+                <div class="veille-subblock">
+                    <div class="veille-subblock-header">
+                        <div class="veille-subblock-title-wrap">
+                            <span class="veille-step-pill"><i class="fas fa-stream"></i> <span data-i18n="veille.timelineBadge">Chronologie</span></span>
+                            <h2 class="veille-subblock-title" data-i18n="veille.timelineTitle">Évolution de ma veille</h2>
+                        </div>
+                        <p class="veille-subblock-desc" data-i18n="veille.timelineDesc">Frise chronologique générée automatiquement à partir de mes entrées de veille (2025 – 2026).</p>
+                    </div>
+                    <div class="v-timeline-track" id="veille-timeline-track">
+                        <!-- Populated dynamically by veille.js -->
+                    </div>
+                </div>
+
+                <!-- 5. Monitoring Methodology & Categorized Sources -->
+                <div class="veille-subblock veille-methodology-subblock">
+                    <div class="veille-subblock-header">
+                        <div class="veille-subblock-title-wrap">
+                            <span class="veille-step-pill"><i class="fas fa-compass"></i> <span data-i18n="veille.methodBadge">Démarche Structurée</span></span>
+                            <h2 class="veille-subblock-title" data-i18n="veille.methodTitle">Ma méthode de veille</h2>
+                        </div>
+                        <p class="veille-subblock-desc" data-i18n="veille.methodDesc">Un cycle rigoureux en 4 étapes pour transformer le flux d'informations technologiques en décisions d'architecture applicables.</p>
+                    </div>
+
+                    <!-- 4-Step Visual Process -->
+                    <div class="v-method-steps-grid" id="veille-method-steps">
+                        <!-- Populated dynamically by veille.js -->
+                    </div>
+
+                    <!-- Categorized Sources Suivies -->
+                    <div class="v-sources-block">
+                        <h3 class="v-sources-heading">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span data-i18n="veille.sourcesTitle">Sources suivies</span>
+                        </h3>
+                        <div class="v-sources-grid" id="veille-sources-grid">
+                            <!-- Populated dynamically by veille.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="logo-terminal">&gt;_</span>
+                <span class="footer-name">Murat Can ERCANLI</span>
+                <span class="footer-copy">© 2026. <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+            </div>
+
+            <div class="footer-status">
+                <span class="pulse-dot"></span>
+                <span data-i18n="footer.status">Statut Système : À l'écoute de nouvelles opportunités en CDI</span>
+            </div>
+
+            <div class="footer-right">
+                <a href="index.html#home" class="back-to-top" aria-label="Retour à l'accueil" title="Retour au portfolio">
+                    <i class="fas fa-house"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full Veille Analysis Modal -->
+    <div class="v-modal-backdrop" id="veille-modal-backdrop" hidden>
+        <div class="v-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="veille-modal-title">
+            <div id="veille-modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="veille.js"></script>
+</body>
+</html>
+
